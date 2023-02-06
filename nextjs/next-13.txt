@@ -1,0 +1,17 @@
+app folder e   // folder gula route hisabe gonno hobe. er vitore file name obosssoi page.js or jsx hote hobe.
+example:-   app > issue > Isuues.js   / ekhon localhost:3000/issue    diye enter dile kaj korbe.
+            app > issue > layout.js  / layout o thakte pare.
+
+app er modde css moduler akare likte pari.
+
+
+
+
+fist terminal  // auto suggestion dibe etay.
+yarn add -D typescript  // eslint and typescript conflict er warning r dekhabena.
+
+
+app folder e ja ja likbo sob by default server component.
+
+
+

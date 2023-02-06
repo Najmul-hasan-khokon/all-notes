@@ -1,0 +1,26 @@
+intance method
+_______________
+ new mongoose.schema()  // eta ekta class ba kathamo.
+const userSchema = new mongoose.schema()  // eta theke userSchema name e ekta actual schema banabo.
+
+
+then const User = new mongoose.model() // e userSchema pass kore ekta actual model banabo. seta je kono name e hote pare.
+
+
+
+then const newUser = new User() 
+           newUser.save()  // save() tai hocce instance method and eta hocce built in. newUser hocce actual document.
+
+
+
+// custom instance method
+
+
+statics
+________
+
+
+
+
+query helper
+_____________

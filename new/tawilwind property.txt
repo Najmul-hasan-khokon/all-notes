@@ -1,0 +1,26 @@
+ 
+
+1: container  // bootstrap er moto container use korte parbo.
+
+2: inset // position absolute er value hisabe inset use korte parbo.
+inset-0   mane top-0, left-0, right-0, bottom-0
+inset-1   mane top-4px, evabe sob hobe
+inset-x-0   // evabe x and y okkho bora bor o kaj korte pari
+
+note// kaj korte gele dorkar hoile abar dekhbo
+
+
+
+3: break-after-column/all/left/right/page etc....   // kono ekta element er pore erekta element break korte.
+      // eta container hisabe column-1/2/3 etc.. use korle
+      // break-after jemon ache break-before o ache.
+
+4: 
+
+
+
+
+
+
+
+

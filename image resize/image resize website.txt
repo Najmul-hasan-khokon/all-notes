@@ -1,0 +1,16 @@
+
+1:  https://www.simpleimageresizer.com/ 
+
+    //ei site ta hocce simple image resize korar jonno.
+         // ei site theke vibinno size er image resize korte pari and jpg theke png , png theke jpg te convert korte pari.
+      
+
+
+
+2:  https://resizeimage.net/
+   
+       // ei site ektu advance lavel er. ekhane onek kichu kora jay.
+
+
+3:  Js image compressor  
+          // image er mb komano baranor jonno

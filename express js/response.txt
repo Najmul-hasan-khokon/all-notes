@@ -1,0 +1,85 @@
+response dewar somoy o automitically kichu header jog hoye jay ba amra manually kichu header jog kore dite pari.
+// response er header read kore amader client ba browser r request er header read kori amra mane express.
+   // response er sathe amader express app kichu datao dite pare. seta vibinno formate e hote pare. like json, html, plain text hote pare.
+     // reponse dewar somoy abar kichu cookies o set kore dite pare.
+
+
+
+-- res.app // req.app motoi onno file e app er reference ta return kore.  
+
+
+-- res.headersSent // eta true false return kore . jodi headerSent hoy tahole true otherwise false return korbe.
+                      eta use korte hole obossoi amar ekta templete engine thakte hobe.
+
+
+-- res.locals // khub important . jokhon amra kono templete engine use korbo and sever theke views folder e data send korbo
+                                 tokhon . res.render() er sathe local variable pass kore dite pari.
+                                // <%= name %>   ejs file e evabe local variable recieve korte hoy. render er second peramitar e object dibo.
+
+
+
+methods
+______________
+
+
+-- res.cookie(name, value [, options])   // cookie set korar jonno.
+-- res.clearCookie(name [, options]) // cookie clear korar jonno. jei client cookie support kore sei client er cookie remove kore dite pari.
+
+
+-- res.end([data] [, encoding])   // response ke end korar jonno. eta korle client er sathe connection disconnect hoye jay.
+
+-- res.send()  // jodi http response er sathe kono data dite cai. data chara response end korte // res.end() dei.
+
+-- res.json() // json data response dite . jeta khub beshi use hoy. just eta vitore object dile se setake json Stringify kore dey.
+
+-- res.status()  // status set korar jonno. je seta ki 200 naki 400 etc...
+
+-- res.sendStatus(statusCode) // eta dile status code to jabei tar sathe sathe oi status code ta reponse er sathe data hisabe 
+                                chole jabe client er kache.
+                                    
+
+-- res.render()   // view ke render kore ba templete engine ke render kora. app e view theke setake jodi load korte hoy.
+                     folder er name views hote hobe . er vitore jai dei r extension something.ejs hobe.
+
+
+
+-- res.format(object) // kon type er data accept korbo seta just se formate kore dey.  header e jodi Accept text/plain hoy
+                         tahole prothom ta callback e dukbe then return korbe . r jodi kono tai match na kore tahole // default e dukbe.
+
+  // for example
+
+app.get('/', (req, res)=>{
+  
+  res.format({
+    'text/plain': function () {
+      res.send('text')
+    },
+  
+    'text/html': function () {
+      res.render('pages/about')
+    },
+  
+    'application/json': function () {
+      res.send({ message: 'hey' })
+    },
+  
+    default: function () {
+      // log the request and respond with 406
+      res.status(406).send('Not Acceptable')
+    }
+  })
+})
+
+
+
+
+-- re.location()   // location namok response e location namok header set kore dey kono ekta url e. eta send korle client bujbe 
+                       amake omok url e hit korte hobe . but redirect kintu kore dey na.
+
+
+-- res.redirect()  // jeta ekta url e redirectk korte help kore client ke. just ami ekta path bole dibo.
+
+
+-- res.set('name', 'najmul hasan') // response header meta data set korte pari.
+-- res.get('name') // eta diye http response header get korte pari.
+

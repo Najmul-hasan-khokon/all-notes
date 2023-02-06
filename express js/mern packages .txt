@@ -1,0 +1,111 @@
+
+
+
+Mern Back End Packages
+_______________________________
+
+express.js
+body-parser
+cookie-parser
+cors
+dotenv
+express-mongo-senitize
+express-rate-limit
+hpp healmate
+jwt token
+bicrypt
+mongoose
+multer
+xxx-clean
+
+
+
+
+
+
+
+
+
+
+Mern Front End React Packages
+____________________________
+react-bootstrap
+routing
+axios
+react-slick  // slider er jonno
+cogo toast        // toast/notification massages.
+export from json    // csv,xlsxhtml, text, html, exporting.
+react html parser   // parsing dynamic html.
+react html to image // export component as image file.
+react html to canvas
+local forage    // localstorage niye kaj korar jonno.
+moment  // to manage time and date.
+qr code  // creating and scanning qr code.
+bar code  // creating and scanning bar code.
+date picker    // date input type component .
+icon   // nessarry svs icon.
+react select  // managing dropdown menu.
+react window   // large data niye kaj korte.
+
+
+react excel  // pore 
+sweet alert   // creating pop up dialog.
+cleave js    // input type formatting.
+code input   // pin code / otp input component.
+react currency   // currency type formatting.
+marquee   // creating left right marque.
+tooltip    // show hide item tips.
+recharts   // creating charts/graph.
+circular progressbar   // a circular progressbar component built with svg and extensively customizable.
+images appear    // react js component to make images appear with transition as they load.
+
+
+
+
+
+which server is best for mern stact
+______________________________
+dedicated private server
+
+
+-- Data center
+   // data center theke server pc kine setake amader nijesso server hisabe use korte parbo and data gulao amader server ba control e thakbe.
+     server pc te amader laptop pc te ja ja thake soboi pabo. just amader laptoper sathe connect kore nilei hobe. ekhane code 
+      kore ekhanei deploy korte parbo. sob cheye boro kotha ekhane amader fully freedom thakbe.
+        laptop e vibinno software install theke suru kore ja ja korte pari ekhaneo ta ta korte parbo.
+              onek kichu shikha ba research kora jabe. // sudu mern na je kono technology like php paython ect.. niyeo kaj kora jabe.
+    google amazon etc... er moto large scale er company gula tader nijesso server pc use kore.
+
+
+
+// mongodb atlas ba amazon web service ei gula use korte holeo pay korte hoy. tobe data gula oder server ba oder control e thakbe.
+     se khetre amader kono freedom thakbe na.
+
+
+
+
+
+cv
+____
+ekadhik page hobe . simple way te hobe and pdf formate e hobe
+
+
+
+// front end e ki ki thakbe.
+    avoid business logic in front end
+    avoid hardcoted value
+    avoid business data processing  // front end e data manage theke suru kore sob kora jay bole .
+                                        eta kora uchit na jeta server side kora uchit seta server e manage korai better.
+    form validation ta amra front end thekei korte pari. back end theke korle time waste hobe + performance kombe.
+     joto dhroner input amra user er kach theke nibe cesta korbo segulake front end ei validation korar.
+              ete kore user exprerience barbe. 
+// kon data ta localStorage ba cokiee te rakhle user exprerience barbe sedike nojor dite hobe.
+    responsive tao front end ei hobe. mane kon device e kon size hobe.
+
+// vinno binno browser web application er coe gula run hocce kina sedike lokkho rakhte hobe.
+   reusable code likte hobe. jate seta pore dorkar porle bar bar use kora jay.
+  performance optimization er dikeo lokkho rakhte hobe je web site koto druto load hocce ba dat aprocessing korteche.
+
+
+real life e kaj korar somoy front end developer and back end developer er modde ekta undertanding kore nite 
+hobe je kon kon jinis gula front end e thakbe r kon kon jinis gula back end e thakbe.

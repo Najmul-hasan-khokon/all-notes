@@ -1,0 +1,110 @@
+window theke menu ba submenu gula hide ba show korte parbo.
+1: photoshop e pic open korte majkhane khali jaygay mouse pointer rekhe double click korlei pic open hoy jabe.
+ e charao aro onek vabe open kora jay. but best and easy way eta.
+
+ctr + backspace : dile pic er background e color hoy jabe age pic select korte hobe.
+
+ctrl+e //ekta lyaer er sathe arekta layer marge korte. onek layer thakle ektay merge kore nite hobe.
+ctrl+j // layer copy korte , age layer select korte hobe.
+ctrl+enter then ctrl+backSpace // pen tool diye select kore emon command dite hobe
+ctrl+m // opacity hen ten onek kichu changle korte pabro.
+ctrl+u // tao lighting taighting changle korte parbo.
+ctrl+b //tao lighting taighting changle korte parbo.
+pic print korar somoy ctrl+e // dile pic gula group hoye jabe then ek dui line kore copy korte parbo.
+
+
+ctr+d : kono kichu select kore ctr+d dile unSelect hoye jabe.
+shift+alt : diye kono ekta document pic ba je kono kichu theke copy kore kore pasa pasi bosaite pari.
+             jemon 5foot size er chobi 4ta pasa pasi bosay temon.
+
+icca moto kichu move korte caile layer e mark kore move korte parbo.
+   // menu er niche auto select layer mark kora thakle r layer e mark kore move korte hobe na. mouse click kore automatic move kora jabe.
+
+
+ctr+t : pic boro choto korte ctr+t dile transform hobe then icca moto boro choto korte parbo.
+shift+alt: diye pic er cornar dhore tanle eta somo poriman boro choto hobe.
+            // move tool theke show bounding box select kora thakle r ctr+t press kore tansform option ante hobe na.
+
+ctr+alt+z : dile ektu besi undo hoy.
+
+
+sudu alpabet diye photoshop er option gulake navigate korte parbo. like marque, leso tool etc..
+image full screen hoye gele. f button e click korbo.
+alt+mouse scroll korle zoom in and out kora jay. then dane bame nite hand tool use korbo.
+
+
+part : 2
+_____________
+ctr+shift+i : dile front side kata jay abar dile back side hobe. obossoi age pic select kore nite hobe.
+alt+mouse doboul click : in layer er talay, layer unloack korte
+//magic tool diye select korle jodi ulta palta kichu select hoy tahole, lesso tool select kore Alt+mouse click kore kete dite pari.
+
+---crop tool. age height width dobo. resolation proti pic e 300 diye kaj korbo.
+// pic select kore color niye : keyboard er back space dile background e color change hoye jabe.   
+// kono ekta pic e kaj korle abar original pic e  jete caile history theke scrole kore upore giye click kore jete parbo.
+
+healing brust tool
+___________________
+mouse er cursor boro korte ] r choto korte [ bracket dite hobe.
+then pic e jei khane valo ache alt+mouse click kore color niye nibo and then jekhane jekhane spot ache just sei color ta diye dibo.
+healing er sub tool hocce petch tool eta diye spot niye dragen drop kore valo jaygay dile valor color dharon korbe.
+
+
+-- eyedroper select rekhe kono jay gay click korle front color panel tate oi color chole asbe.
+
+--clone stamp diye ek jaygar color onno jaygay clone kor nite parbo. juat alt+mouse click diye copy korbo.
+
+
+-- history brush diye pic purber obosthane ante parbo.
+
+
+-- eraiser tool diye khub sohojey background er je kono color muche pelte pari.
+
+
+--- blur, smudge diye pic japsa ba banga thale thik kore.
+
+
+--- dodge tool diye white color dewa hoy pic e . burn diy black and sponge diye grey color dewa hoy.
+
+
+-- pen tool : diye select kore ctr+enter dilei jei onso select korci oita select hoye jabe.
+        add anchor : pen tool diye jeta select korci oitar kothaw vul thakle mouse diye tene thik kora jabe. 
+        delete anchor : diye ja select korci jekhane mon cay delete korle parbo.
+       alt+mouse click    // handle katte use hoy. select korar somoy lomba lomba akguli delete korte. just alt+dot e click korbo.
+       ctrl+mouse click dore rekhe // jodi vul jaygay select kore peli. eta dragon drop er moto kaj korbe.
+
+
+
+--- reqtangle tool : diye shap banaite parbo.
+                      shap baniye ctr+space dile select hobe then Atr+backSpace dile color provide hobe then ctr+d dile
+                       buja jabe color provide hoyeche kina.
+                      
+           /// ctr+backspace dile nicher color asbe.
+           /// alt+backspace dile uporer color asbe.
+
+
+
+
+
+--- note tool : note korte parbo and
+               audio diye audio record kore psd file e save kore rakte parbo.
+
+
+
+
+---- hand tool : diye pic zoom obosthay thakle mouse diye edik sedik nite parbo.
+             // hand tool select er shortcut hocce space button e chap diye mouse click kore naraite parbo.
+
+
+
+--- zoom tool: zoom in korte mouse click
+                zoom out korte alt+mouse click.
+               // pic er nirdisto kono jayga select korte hole zoom + ba - select kore jei ongso ke 
+                   zoom korte cai setake mouse diye tene dilei zoom hoy jabe.
+
+
+
+
+
+// psd formate e save korle layer gula alada thakbe pore abar caile edit korte parbo.
+// jpje formate e save korle sob layer eksath hoy jabe. caile pore abar edit korte parbo na.

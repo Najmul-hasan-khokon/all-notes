@@ -1,0 +1,3 @@
+// Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef()?
+    karon:  Link tag e immedietley image use korle ei error ase.
+solved:  link>div>image    // link er vitore div or any tag then er vitore image

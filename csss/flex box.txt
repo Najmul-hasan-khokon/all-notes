@@ -1,0 +1,95 @@
+
+flex box hocce one dimandtional . float er prblm solve korar jonnoi flex box asce.
+///// complex layout ba 2 dimandtional kichu korte gele flex diye seta onek complex hoye jabe , markup e hat dite hobe
+              // se khetre grid best. ekta website er main page gula grid diye cinta korbo jate porobortite kono kichu
+                 changle kora lagle markup e hat na dite hoy. page er box gula ke flex diye cinta korte pari.
+
+
+direction er maddome main axis cross axis change hote parbe ba guraite pari.. // by default flex-direction: row ; e thake.
+
+__// container er jonno property flow and align korte.
+    display: flext;
+    flex-direction: column / row;
+    flex-direction: column-reverse / row-reverse;
+    flex-wrap: wrap; // width beshi hole jodi kono content bahire chole jay tokhon wrap korle niche chole jabe.
+    flex-wrap: nowrap; // by default nowrap e thake.
+    flex-wrap: wrap-reverse; // item reverse hobe just flow mantain kore reverse hobe.
+    flex-grow: 1; by default 0 thake.
+
+
+
+// shorthand of     flex-direction and     flex-wrap.   // egula soboi main axis borabor flow.
+    flex-flow: flex-direction  flex-wrap; // flex-flow: row-reverse wrap;
+
+
+
+---// main axis borabor alignment dekhbo.
+    justify-content: start/ end/ center/ space-around/ space-between/ space-evenly;  // pura content move korbe.
+
+
+// note:
+  space-around // sob dike space hobe.
+  space-between // dan e bam e sore giye sudu maj khane soman vabe space hobe.
+  space-evenly // dan e bam e center e soman vabe space hobe.
+
+
+
+---// cross axis items alignment    ../ items er khetre pura content move hobe na. just ekta row colum er items move hobe.
+    align-items: stretch; // by default items gula pura height niye ney jodi kono fix height na dei.
+    align-items: start // kore dile start e chole jabe height er pura jayga nibe na.
+    align-items: end; // items gula end e chole jabe.
+    align-items: center; // items center e chole jabe.
+
+
+
+--- // cross axis borabor content alignment
+        align-content: start/ center/ end/ space-around/ space-between/ space-envenly; 
+                                                   // pura content align hobe jodi ekadhik row column thake.
+
+
+
+
+
+---//  align-self: flex-start;
+
+
+
+----____ ek ekta single item er jonno property. container ses.
+          order: 2; // by default 0 thake . jei item er order er value joto kom  hobe se toto age bosbe.
+          flex-grow: 1; // eta main axis borabor kono jayga khali thake sokol item soman vabe width niye nibe ba grow korbe.
+                             by default 0 thake.
+          flex-shrink: 1; // by default 1 thake.  0 kore dile window choto korle content bahire chole jabe responsive hobe na.
+                                                   mane overflow er moto behave korbe.
+          flex-basis: 100px; // eta dewa r width dewa ekoi kotha. tobe ekta responsive er jonno best.
+                                       flex item e min-width debo na. overflow er bepar asle basis setake handle korbe.
+
+// note:
+     flex-basis: 200px; // ami bole dicci vai tomi minimum 200px rakhar cesta korba na parle proujonio bebostha niba.
+
+
+
+
+--// shorthand of flex-grow / shrink and basis.
+       flex: flex-grow flex-shrink flex-basis; // flex: 0 1 100px;
+         
+
+
+
+
+
+foo123-shard-00-03-a1b2c.mongodb.net:27017
+
+
+client = mongoc_client_new ("mongodb+srv://kay:myRealPassword@cluster0.mongodb.net/?serverSelectionTryOnce=false&serverSelectionTimeoutMS=15000&w=majority");
+db = mongoc_client_get_database (client, "test");
+
+
+
+mongodb+srv://kay:myRealPassword@cluster0.mongodb.net/?serverSelectionTryOnce=false&serverSelectionTimeoutMS=15000&w=majority
+
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+windows+s    / to go searchbar in windows
+ctl+l       / to go searchbar in chrome
+CTRL + Shift + ESC to jump directly into the Task Manager.
+          // Restart the Windows File Explorer from task manager. if we have windows searchbar prblm.
+windows+v
+ctrl+d  / to select word or line. we can select multiple just keep c+d
+catrl+u / to deselect text
+ctrl+shift+o  / to go specific variable , function etc..
+alt+1 ,2 . to navigate tab
+ctrl+g. to go line. we have to put number to go specific line.
+alt+right or left  / to navigate previous tab
+
+
+
+new shortcult
+______________
+alt+f4 = then enter.  eta dilei laptop shut down hoye jabe.
+windows+d    / dile sob minimise hoye desktop e chole jabo
+ctrl+z      / kono file delete kore abar ante eta dibo. / abar bad dite ctrl+y dibo
+ctrl+h    // chrome er history te chole jabo. chrome giyei marte hobe.
+ctrl+alt+delete then task manager   
+        // computer jodi hang hoy tahole , jei app er karone hang hobe setake right click kore end tast e click kore dibo.
+or ctrl+shift+esc
+windows+e   // this pc te niye jabe.
+windows+arrow   // computer er window gulake dane bame upore niche move koraite parbo.
+windows+ +  / jekhane cursor thakbe sekhane onek zoom korte parbo.
+windows+x  / dile onek option ek sathe peye jabo. like disk management, task manager, poweshell etc...
+
+
+
+
+{chats &&
+        chats.length > 0 &&
+        Object.entries(chats[0].null)
+          ?.sort((a, b) => b[1].date - a[1].date)
+          .map((chat) => (
+            <div
+              className="userChat"
+              key={chat[0]}
+              onClick={() => handleSelect(chat[1].userInfo)}
+            >
+              {/* {console.log("i am at chats")} */}
+              <img src={chat[1].userInfo.photoURL} alt="" />
+              <div className="userChatInfo">
+                <span>{chat[1].userInfo.displayName}</span>
+                <p>{chat[1].lastMessage?.text}</p>
+              </div>
+            </div>
+          ))}

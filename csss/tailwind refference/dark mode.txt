@@ -1,0 +1,47 @@
+
+
+2vabe dark mode kora jay 
+  1: device er theme jei mode e thakbe sei mode e app run korte pari. // darkmode: 'media' hobe
+  2: rool html element ke dark kore dite pari.  // se khetre tailwind.config.js file e darkmode: 'class' hobe
+
+
+
+
+// tailwind.config.js file e
+     /darkMode: "class",   kore dite hobe by default media thake.
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  darkMode: "class",
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+
+
+
+// parent er class dark kore dibo then child e dark:something dibo.
+    / device er prefference onujai o dark and light hoy.
+
+ <div className="dark">  // eta amra set korci.
+      <h1 className="bg-blue-500 text-white dark:bg-yellow-400">
+        TailwindPractice
+      </h1>
+    </div>
+
+
+
+
+// multiple variant er jonno ekta order maintain korte hobe.
+lg:dark:hover:bg-blue-400   // age responsive then dark and then state variant
+
+
+
+
+
+specipity   
+__________
+  jeta more specipic setai kaj korbe
+   dark thakle seta specipity onno sokol element er thekeo beshi hobe.

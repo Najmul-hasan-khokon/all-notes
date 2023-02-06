@@ -1,0 +1,19 @@
+file upload korar jonno multer use .
+
+form data handle korar jonno o multer use hoy.
+
+
+// 1mb = 1000kb * 1000bites 
+// 1000000 bites = 1mb
+
+
+
+// upload er vitore onek gula property dite pari.
+1: limits:{}   // amader file er size koto boro ba choto hobe seta bole dite pari. obossoi fileSize bite e dite hobe.
+2: fileFilter function jetar modde amra bole dite pari. file kon formate er hobe kon type er hobe. orthad file validation
+    korte pari.
+
+
+
+
+single file multiple file upload korte pari. and form data o upload korte pari.

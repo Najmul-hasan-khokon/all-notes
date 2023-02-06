@@ -1,0 +1,9 @@
+ <h1 className="bg-[#fffff] text-[red] ml-[50px]">my name is najmul</h1>
+      // text er pore -[] er vitore amader custom color size margin padding etc.. dite parbo
+
+text-[red]/50   // custom color e [] er pore hobe
+text-red/30
+   /50  // dile text er opecity 50% hoye jabe.  evabe / diye nijer moto %dite pari.
+
+!font-bold // ! dile !important hoye jabe.
+font-weight: bold !important;  // emon output hobe.

@@ -1,0 +1,65 @@
+
+Note:
+______
+All string methods return a new value.
+They do not change the original variable.  
+
+
+
+const string = "hello my  name is najmul  ";
+
+methods
+_________
+charAt(indexNumber)   // index er position e kon charecter ache?
+conCat()
+endsWith('h')   // return true false. eta false hobe
+startsWith('h')  // return true false.  eta true hobe
+indexOf('h') // 0 index position e ache. ei string e h zero index e ache.
+lastIndexOf('e') // 13 number index hobe. string e joto gula e ache tar last ta hobe.
+match()
+repeat(2) // string ta 2bar repeat hobe.
+replace('kake replace korbo' , 'ki diye replace hobe')
+slice()  // new string return kore
+split() // string ke array te convert kore.
+substring(0, 5)  // 0 number index theke 5 porjonto por por letter dekhaba.
+toLowerCase()
+toUpperCase()
+toString() // array , number, object ke string convert kore.
+trim()  // ' hi ';  qutetion er 2 pase whiteSpace thakle remove korbe.
+string.valueOf('my')  // string er vitore my thakle pura string er value return korbe.  
+
+property
+_________
+length  // string er length jante
+constructor
+prototype
+
+
+
+
+number methods
+____________________
+All number methods return a new value. They do not change the original variable.
+
+isNaN(string)  // true hobe. karon eta number na.
+number.tofixed(3) // . er pore 3ta number thakbe.
+string.toPrecision() // string ke number e convert korte.
+parseInt(string)  // string number e convert hobe
+parseFloat(string) // etao same
+Number(string)   // etao same
+Number.isIntiger(number) // true false return kore.
+
+
+ const k = "344";
+ String(k);  // 344
+
+
+
+number property  / egula use dekhi nai ekhono.
+________________
+Number.NaN
+Number.MAX_VALUE
+Number.MIN_VALUE
+Number.NEGATIVE_INFINITY
+Number.POSITIVE_INFINITY
+

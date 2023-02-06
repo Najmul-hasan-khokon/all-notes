@@ -1,0 +1,18 @@
+apiKey: "AIzaSyANn5WptKOjINFF1KtTVicsuZHzUsM2cPw",
+authDomain: "react-quiz-dev-d2231.firebaseapp.com",
+projectId: "react-quiz-dev-d2231",
+storageBucket: "react-quiz-dev-d2231.appspot.com",
+messagingSenderId: "546571273034",
+appId: "1:546571273034:web:61262e2f3a8d155daa37b3"
+
+
+
+
+edit api
+
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_ID,

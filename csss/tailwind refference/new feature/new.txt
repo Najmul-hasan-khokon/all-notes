@@ -1,0 +1,54 @@
+
+  onek kichui asce list kori nai.
+
+
+web page  print korar somoy preview kmn hobe seta jonno tailwind e class diche seta holo // print
+
+img ba video er upore control nite // aspect-ratio
+user er scoll er upore control nite scroll snap api // snap       etato carousel er scroll
+user er scroll er upore control nite parbo.  // web page scroll
+
+// multi colum ache. eta awesome ekta feature
+
+grid-clos-[100px_1fr_120px]  // jekhane multiple value te space dite hoy sekhanei _ diye dibo.
+grid-clos-[100px 1fr 120px] // space not allowed
+
+
+underline ke amara decoration korte parbo. // text highlight korar jono.
+
+
+
+note:// jodi new css kono property tailwind e na theke tahole just sudu [something] er vitore likhlei hoye jabe. 
+            er age kichu dewa lagbe na.
+
+
+
+
+
+massive change   // tobe eta recommended na. prectice purpuse e kora jete pare.
+_______________
+ age cdn use kore kono kichu customize kora jeto na. ekhon caile customize o korte parbo.
+   mane tailwind config file ja ja korte partam ta ta korte parbo.
+<script>
+tailwind.config = {
+     theme: {
+       extend: {
+         colors: {
+           lwColor: '#ffff'
+        }
+     }
+   }
+ };
+</script>
+
+
+
+utilities o add korte parbo index.css file er moto.
+<style type='text/tailwind'> 
+@layer utilities{
+   .my_color{
+       color: red;
+   }
+ };
+</style>
+

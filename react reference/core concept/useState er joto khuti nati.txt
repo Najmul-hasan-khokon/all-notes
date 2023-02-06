@@ -1,0 +1,30 @@
+Raven Hart
+
+
+state update holei component reRender hoy.
+r component reRender ses holei useEffect call hoy. useEffect sobar sese call hoy.
+
+
+prottekbar component reRender howar por useEffect er call back function call hoy.
+
+// pura dom ready ba component render howar por useEffect call hobe.
+// useEffect e [] dependency mane ekta e call hobe. state change ba component reRender holeo eta call hobena.
+// dependency er vitore bole dite pari, je ki change hole eta call hobe.
+
+
+
+// object ba array niye kaj korte hole copy kore kaj korbo.
+
+
+// parent component reRender hole child o reRender hoy.
+
+// object ba array component render hole se notun refference pay. React.memo use na kore useMemo use kora uchit
+         mane object ba array take mone rakhte hobe. component jotoi render or reRender hok.
+         / eta to parent theke child component e object ba array props akare pathanor khetre useMemo()
+         / r jodi props hisabe ekta function pathai tahole function er reffrence mone rakhar jonno
+              useCallBack() use korbo.
+
+
+// useMemo diye khub easily object ba array er refference mone rakhte pari. 
+
+

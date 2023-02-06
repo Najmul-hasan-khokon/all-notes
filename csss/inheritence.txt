@@ -1,0 +1,8 @@
+color: inherited;  // immediate parent theke je color pabe seta nibe.
+                       na paile aste aste uporer dike jabe kothow na paile body te jabe.
+                         karon body sobar parent. immediate style paile body er style ke /overrite korbe.
+
+// body er vitore ja thakbe setar specipity khub kom. browser e default value thekeo kom.
+
+// * ba unversel selector eta theke inherite hobe na. eta jeta kore prottekta element dore dore style kore dey.
+

@@ -1,0 +1,7 @@
+C:\Program Files\MongoDB\Server\5.0\
+
+// mongoCompass hocce mongodb er use interface.
+   / obossoi eta ke windows services section e giye allow ba start kore dite hobe.
+
+
+// by default mongodb er local database ta mongodb://localhost:27017 port e connected thake.

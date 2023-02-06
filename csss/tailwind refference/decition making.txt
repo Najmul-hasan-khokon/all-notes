@@ -1,0 +1,15 @@
+// tailwind e 3 dhoroner layer niye kaj korbo amra.
+
+
+@tailwind base;  // tailwind er core jinis change korte caile ei layer niye kaj korbo.
+@tailwind components;  // components niye kaj korle ei layer.
+@tailwind utilities;   // amader nijesso utility niye kaj korle ei layer e kaj korbo.
+
+
+// directive bole egulake
+@tailwind base; 
+@tailwind components;
+@tailwind utilities;
+@layer
+@apply
+@variant

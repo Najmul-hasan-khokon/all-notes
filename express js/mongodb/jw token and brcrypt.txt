@@ -1,0 +1,89 @@
+ljdfldlf.ldfdasld.dlfdlkf    // jwt token gula hash akare thake.
+
+decoded online platform
+_______________________
+--cryptii.com // e hash take dile data dekte pabo and data dile hash dekte pabo.
+
+
+. er ager jinis gula ek ekta part
+
+1: part hocce header and eta ekta indivisual json. token somporkito information thake header e. like: kon algoridm etc...
+2: part hocce payload jekhane amader data thakbe // etao indivisual json jekhane data thakbe. note: eta public ekhane secret kichu rakha jabena.
+3: part hocce signature// mane amader jei data ache setake se secret key diye se ekta signature make kore rakhe.
+
+
+
+// secret key muloto server e thake . eta kono manus er kache thake na.
+  jokhon json web token ta jokhon server er kache jabe. server tar kache thaka secrect key diye vilidate ba setake cenar cesta korbe jodi 
+   cine tahole kono ekta kichu access korte dibe user ke. na cinle dibe na.
+
+
+// server singnature ba secret key diye user er indentity cenar cesta kore eta poricito naki oporicito.
+
+
+
+
+note: jwt token language er vinnotar karone etar use case  different hote pare. like: php , js, paython sob diye kora jay.
+   -- amra route protect korte pari and bole dite pari // jokhon tomi protected route e hit korba tokhoni tomake token dibo otherwise dibona.
+      seta 1gonta 1din etc... hote pare token er somoy ses hole r protected route access korte parbe na.
+
+--- token amara always req.header e newar cesta korbo eta best practice. oneke body te pathay oita best prectice na. 
+      //vibinno language e banano frontend theke token pathaite pare jate jamela na hoy tai header e nibo.
+    ---// header e Authorization propertry er modde convenstion Bearer dibo then token Like: Authorization : Bearer dklfll;dfjldf                 
+
+
+
+bcrypt  // library password hash korar jonno
+___________________________________________
+
+user signup korar somoy tar password ke hash kore den server e save korbo.
+
+abar login korar somoy bcrypt.compare() diye user er bortoman password and server hashed howa ager password pass kore dile true false 
+ return korbe. jodi true hoy jwt.sign() er maddome amra user ke ekta token genarate kore dibo nirdristo time er jonno.
+
+
+
+
+dotenv   // .env file gula read korar jonno ba envernment variable access korar jonno.
+_______________
+.env file theke secrets key ta amara token genarate korar somoy sorasori pabo na. se khetre dotenv pakege install
+kore require kore seta.config() call kore dite hobe home page ba jekhane amader main app ache sei page e.
+
+
+
+
+summery
+_____________
+// singup korar somoy user er kach theke input niye bcrypt er maddome password hash kore server e save korbo. 
+// jokhon user login korbe tokon tar kach theke ager input ta niye ager and pore password compare kore take ekta 
+                                                 token jwt.sign er maddome token genarate kore dibo.
+// and sei token diye amra application er vibinno route protect korte parbo.
+ 
+
+bcrypt.hash(req.body.password, 10) // password hash korbe.
+bcrypt.compare() // ager and porer password compare kore true false dibe.
+jwt.sign()  // compare kore jodi true ase tahole user ke token genarate korbe and ekta token diye dibe.
+jwt.verify() // protected route e hit korle token ta verify korbe jodi token sothik hoy tahole data access pabe.
+
+
+
+
+
+
+-// user get url e hit korle checkLogin middleware fucntion e giye token verify kore porer next() call kore porer middleware function
+       e dukbe. r jodi verify na hoy tahole error throw korbe . porer middlware function e r jabe na.
+
+// get a single todo
+router.get("/:id", checkLogin, async (req, res) => {
+  const data = await Todo.find({ _id: req.params.id });
+  if (data) {
+    res.status(200).json({
+      message: "todo was getted successfully",
+      result: data,
+    });
+  } else {
+    res.status(500).json({
+      error: "there was a sever side error!",
+    });
+  }
+});

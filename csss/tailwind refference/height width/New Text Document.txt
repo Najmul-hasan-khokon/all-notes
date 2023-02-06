@@ -1,0 +1,4 @@
+min-height: 100vh or 95vh;   // use korbo section er jonno
+max-width    // width er jonno
+
+https://www.jschallenger.com/javascript-fundamentals/javascript-basics/comparison-strict-equality

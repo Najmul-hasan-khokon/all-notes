@@ -1,0 +1,4 @@
+_.cloneDeep() // nested array ba object copy korte pari.
+_.isEqual( , )  // nested ekadink array ba object soman kina seta check kora hoy .
+_.isArray([1, 2, 3]); // => true
+_.isNaN(NaN); // => true      jodi number na hoy tahole true return korbe otherwise false.

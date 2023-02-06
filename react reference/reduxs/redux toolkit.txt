@@ -1,0 +1,78 @@
+
+slice mane hocce ek ekta reducer. userSlice , productSlice , counterSlice evabe vinno kajer jonno different name hote pare.
+   // createSlice({}) er vitore 4ta jinis dite hobe 
+      1: name: 'counter',
+      2: initialState,
+      3: reducers : {} object er vitore vibinno action thakbe.
+      
+
+
+    then counterSlice.actions theke action property gula destructure kore nibo.
+    last e counterSlice.reducer ke export default kore dibo.
+    
+
+   // confugureStore diye ekta store make korbo
+      jekhane configureStore({reducer:{}}) er vitore rootReducer thakbe. 
+       reducer object er vitore sub reducer gula diye dibo.
+
+
+
+    // app er store take provide korbo react-redux er maddome.
+
+
+    // usedispatch() diye action call korte pari
+
+    // useSelector() diye state theke data pete pari.
+
+
+
+
+
+   // for example
+
+// create a slice
+
+import { createSlice } from "@reduxjs/toolkit";
+
+const initialState = {
+  count: 0,
+};
+
+const counterSlice = createSlice({
+  name: "counter",
+  initialState,
+
+  reducers: {
+    increament: (state, action) => {
+      return { count: state.count + 1 };
+    },
+    decreament: (state, action) => {
+      return { count: state.count - 1 };
+    },
+    clearCounter: (state, action) => {
+      return { count: Number("") };
+    },
+  },
+});
+
+export const { increament, decreament, clearCounter } = counterSlice.actions;
+export default counterSlice.reducer;
+
+
+
+
+
+
+
+
+
+// create a store 
+
+import { configureStore } from "@reduxjs/toolkit";
+import counterSliceReducer from "./slice";
+
+export const store = configureStore({
+  reducer: {
+    counter: counterSliceReducer,
+  },
+});

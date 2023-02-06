@@ -1,0 +1,150 @@
+amra caile todor sathe user er ekta relation korte pari . 
+/ se khetre user er ekta Id amra todo te dite pari. tahole buja jabe ei todo ta kon user make korce.
+
+// just todo er vitore user er ekta id pass kore dibo jate buja jay je ei todo ta ke make korce.
+     ekta todo ekjon user make korte parbe seta hocce 2 joner modde    // one to one relation
+
+
+
+// user er sathe todo er ekta relation korte pari. orthad user er vitore todos namok ekta field rakte pari.
+     jekhane multiple todo thakbe. mane ek jon user er multiple todo make korte pare    // one to many relation
+
+
+note: // todor sathe user er connection seta hocce / one to one relations
+      // user er sathe todor connection hocce // one to many relation
+
+
+note: // -- .populate('refValue', 'name username -_id') // second pera miter e space diye diye bolte pari konta dekhabe r age - diye 
+                                                         bolbo konta dekhabe na. like: -name / eta dekhabe na.
+
+
+-- one to one summery  // in schema objectIf and re . in model .populate('refValue')
+__________________
+const mongoose = require("mongoose");
+
+const todoSchema = mongoose.Schema({
+  title: {
+    type: String,
+    required: true,
+  },
+  description: String,
+  user: {
+    type: mongoose.Types.ObjectId,
+    ref: "User",
+  },
+});
+
+module.exports = todoSchema;
+
+
+// todo er modde user namok ekta propery er vitore ObjectId diye user er object Id ta pabo and ref dara bujay
+     kon collection take todo er sathe relation korte caitaci ref take just .populate('user') vitore diye dibo.
+       then jokhon amra todo ke get korbo user er information soho pabo.
+
+   // todo insert koarar somoy user property er vitore req.userId ta dukai dichi.
+
+
+// post a todo
+router.post("/", checkLogin, async (req, res) => {
+  try {
+    const newTodo = new Todo({
+      ...req.body,
+      user: req.userId,
+    });
+    await newTodo.save();
+
+    res.status(200).json({
+      message: "todo was inserted successfully!",
+    });
+  } catch (err) {
+    res.status(500).json({
+      message: "there was a server side error",
+    });
+  }
+});
+
+
+module.exports = router;
+
+
+
+
+
+-- one to many summery
+
+   userSchema er modde todos namok ekta property nobo seta ekta array hobe jekhane ekjon user er multiple todo thakte pare
+    tai {} er vitore ObjectId and ref dobo.  then user jonkhon todo create korbe tar sathe amra user ke update kore pelbo , 
+      updateOne() // first peramiter e user er id and second peramiter e $push : {} er modde todo er id gula dukiye dibo.
+                     // $push eta $set er motoi . push just array update korte pare.
+
+
+
+
+const mongoose = require("mongoose");
+
+const userSchema = mongoose.Schema({
+  name: String,
+  username: {
+    type: String,
+    required: true,
+  },
+  password: {
+    type: String,
+    required: true,
+  },
+  todos: [{ type: mongoose.Types.ObjectId, ref: "Todo" }],
+});
+
+module.exports = userSchema;
+
+
+
+
+// post a todo
+router.post("/", checkLogin, async (req, res) => {
+  try {
+    const newTodo = new Todo({
+      ...req.body,
+      user: req.userId,
+    });
+    const todo = await newTodo.save();
+
+    // update todo id into user
+    await User.updateOne(
+      {
+        id: req.userId,
+      },
+      {
+        $push: { todos: todo._id },
+      }
+    );
+
+    res.status(200).json({
+      message: "todo was inserted successfully!",
+    });
+  } catch (err) {
+    res.status(500).json({
+      message: "there was a server side error",
+    });
+  }
+});
+
+
+
+
+// get user
+router.get("/all", async (req, res) => {
+  try {
+    const users = await User.find().populate("todos", "title description -_id");
+
+    res.status(200).json({
+      data: users,
+      message: "user were getted successfully!",
+    });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json({
+      message: "there was a server side error",
+    });
+  }
+});

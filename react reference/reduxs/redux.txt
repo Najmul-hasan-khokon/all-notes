@@ -1,0 +1,95 @@
+redux hocce state management library.
+state bolte bujano hoy application er sokol data and ei sokol data ke niye just ekta store banano hoy.
+
+
+
+// store => will hold all of our application data/state
+              eta ekta jayga ba dokaner moto jeta amader application er state ke hold kore rakhbe.
+
+
+
+             // store directly data dhore rakhte parena ei jonno amader ekta helper dorkar. orthad reducer function
+                 dorkar jeta ektao hote pare ba ekadhik o hote pare.
+
+
+
+// subscribe
+// dispatch
+
+
+
+
+// app er sathe react dev tool connect korar jonno. creatStore er second peramiter e ei code diye dibo.
+--- window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()  
+
+// for example
+const store = createStore(
+  reducer,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+); // create a store and pass the reducer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import { createStore } from "redux";
+
+const initialState = 0;
+
+const reducer = (state = initialState, action) => {
+  switch (action.type) {
+    case "increament":
+      return state + 1;
+
+    default:
+      return state;
+  }
+};
+
+const store = createStore(reducer); // create a store and pass the reducer
+
+function App() {
+  // jekhane data dekhabo sekhane subscribe korbo.
+  store.subscribe(() => {
+    console.log(store.getState());
+  });
+
+  return (
+    <div className="App">
+      <h1>app</h1>
+      {/* dispatch call kore eventHandler er maddome type bole dilam */}
+      <button onClick={() => store.dispatch({ type: "increament" })}>
+        increament
+      </button>
+    </div>
+  );
+}
+
+export default App;

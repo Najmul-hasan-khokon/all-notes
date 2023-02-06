@@ -1,0 +1,14 @@
+
+2 types of payment methods in ecommerce
+__________________________________
+
+CASH ON DELEVERY  // mane ponno hate paile taka dibo. quriar seller ra ponno niye asbe seta hate paile.
+INSTANCE PAYMENT   // mane order korar somoy bkash , roket , master, paypal etc.. er maddome taka pay kora
+                                                               ponno hate pawar agei.
+
+
+
+shipping cost  // mane delevery const
+
+
+custom tax   // jara delevery dibe

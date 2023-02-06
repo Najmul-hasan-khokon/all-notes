@@ -1,0 +1,133 @@
+pass fb 45957123      
+      variable namik convension
+     ___________________________
+
+1: variable name gula meaningful hote hobe.
+2: variable er age piche extra word avoid korte hobe.   
+    // bad prectice   nameValue, theProduct
+    // good prectice  name, product
+3: always camelCase use kora better
+4: map and filter korar somoy callBack function er name ta ektu meaningful dibo. 
+     // bad prectice   products.map((p)=>{})
+     // good prectice  products.map((product)=>{})
+
+5: name meaningfull korte giye over meaningful kora jabena. 
+      // bad prectice   
+  const product = {
+    productId: 1,
+    productName: "T-shirt",
+    productPrice: 8.33,
+    productUnits: 12,
+   };
+
+     // good prectice   
+  const product = {    // alrady product er vitorei achi. dekhlei buja jay egula product er id, name, price etc...
+    id: 1,
+    name: "T-shirt",
+    price: 8.33,
+    units: 12,
+   };
+
+
+
+
+
+function naming convension
+____________________________
+1: name dekhlei jate buja jay function ki korce
+     // bad prectice
+  function email(user) {}
+     // good prectice
+  function sendEmailToUser(email) {}
+
+
+2: function e arguement er sonkha joto komiye rakha jay. tate test kora onek easy hobe.
+     // bad prectice
+  function getProducts(fields, fromDate, toDate) {}
+     // good prectice
+  function getProducts({fields, fromDate, toDate}) {}   // {} deway ekta arguement hisabe gonno hobe. kaj kintu sameoi.
+
+
+3: arguement dewar khetre default peramiter dewar cesta korbo. condition avoid korbo.
+     // bad prectice
+  function getProducts(type) {
+    const productType = type || "circle";
+  }
+     // good prectice
+  function getProducts(type = "circle") {}
+
+
+4: function ke jei name e likhbo sei kajoi jeno kore. otirikto kaj korbona. se jonno alada function create korbo dorkar hole.
+      // bad prectice
+  function createFile(name, isPublic) {   // ekhane kaj chilo file create kora kintu permission ba privacy check kora hocce.
+    if (isPublic) {
+      fs.create(`./public/${name}`);
+    } else {
+      fs.create(name);
+    }
+  }
+
+      // good prectice
+  function createFile(name) {  // function ke benge refector kore pelbo.
+    fs.create(name);
+  }
+  function createPublicFile(name) {
+    createFile(`./public/${name}`);
+  }
+
+
+5: joto beshi posssible condition checking komano jay. function barle prblm nai.
+     / jei name e function dibo sei ekta kajei jeno se kore. mulple task thake ekadik funcion likhe code refectore kore pelbo.
+
+
+
+6: returenedObject = Object.assign(target , source)   // source er sathe target merge hoye ekta  new object return korbe.
+       // target hobe default value.    conditionally checking na kore Object.assign() eta es6 er feature.
+      // eta diye object er default value set kora jay.
+      // js best prectice turorial er 22m...
+
+
+
+      // bad prectice
+  const config = {
+    name: "najmul",
+    age: 21,
+  };
+  function createDetails(config) {    // onek default value assing korte hole avabe onek code hoye jabe. and readability kom.
+    config.name = config.name || "najmul";
+    config.age = config.age || 15;
+    console.log(config.age);
+  }
+  createDetails(config);
+
+
+
+    // good prectice
+  const config = {
+    name: "najmul",
+    age: 21,
+  };
+  function createDetails(config) {
+    const configs = Object.assign({ name: "rasel", age: 21, id: 55 }, config);
+    console.log(configs);
+  }
+
+  createDetails(config);
+
+
+
+
+
+multiple variable
+_______________________  // ekadik variable likle bar bar const let na diye ekbar const diye multiple variable likbo.
+    // bad prectice
+  const someItem = "some item";
+  const anotherItem = "another item";
+  const anotherMoreItem = "another more item";
+  console.log(anotherMoreItem);
+
+     // good prectice
+  const someItem = "some item",
+        anotherItem = "another item",
+        anotherMoreItem = "another more item";
+  console.log(anotherMoreItem);

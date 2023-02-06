@@ -1,0 +1,3 @@
+    transform: rotate(360deg);  // char dike gurbe
+      transform: rotateY(180deg); // dane bame flip korbe.
+         transform: rotateX(180deg); // upore niche flip korbe.

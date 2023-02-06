@@ -1,0 +1,92 @@
+//// stynchronous error handling
+      synchronous code e error asle express seta handle kore dey application crush kore na.
+   // karon synchronous code jokhon kono error ase // express by default ekta error handling middleware function make kore pele 
+       then jei error throw hobe setake catch kore response kore dibe. app crush khabe na. eta app er ekdom niche hidden obosthay thake.
+
+Note: middleware function amra caile array akreo dite pari. just chain kore kore 
+
+
+type error , refference error ei dhoroner programmer error hole . // status code: 500 hobe
+bad request hole // status : 400 hobe.   // 404 eta asole kono error na eta just not found and express etake handle kore dey
+authorization error hole . // status : 401 hobe
+
+
+by error middleware function ke overRite korte pari. just application er ses middleware function hisabe ekta error handling
+  middleware function likbo jeta 4ta peramiter recieve kore.  err, req, res, next()
+
+
+
+
+// routing error hole mane jei emon ekta route e hit korce but seta nai.
+// example
+app.use((req, res, next)=>{
+  res.status(404).send('reqestion url was not found!')
+})
+
+
+
+
+// example  joto dhoroner server ba programmer error hobe ekhane asbe.
+app.use((err, req, res, next)=>{
+  if(err.message){
+res.status(500).send(err.message)
+  }else{
+    res.status(500).send('server error')
+  }
+})
+
+
+
+
+
+// example 2 error handling / response e amra header ekbaroi send korte pari. 2bar send korar cesta korle error asbe.
+app.use((err, req, res, next)=>{
+if(res.headerSent){
+   next('there was a server error');
+}else{
+  if(err.message){
+    res.status(500).send(err.message)
+      }else{
+        res.status(500).send('there was error')
+      }
+    }
+})
+
+
+
+
+
+
+//// asynchronous error handling
+
+
+// example 
+
+app.get('/', (req, res, next) => {
+setTimeout(() => {
+  try {
+    console.log(a);
+  } catch (err) {
+    next(err)
+  }
+}, 1000);
+
+})
+
+
+
+
+ 
+
+
+///// chainning middleware function
+
+// array er vitore 2ta function. 1s function hocce asynchronous and 2nd ta hocce synchronous function.
+app.get('/', [
+  function (req, res, next) {
+    fs.writeFile('/inaccessible-path', 'data', next)
+  },
+  function (req, res) {
+    res.send('OK')
+  }
+])

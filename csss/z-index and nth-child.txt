@@ -1,0 +1,120 @@
+
+  z-index: 1;  // kaj korate position: relative; korte hobe.  absolute fixed static dileo hobe.
+
+
+  overflow: hidden;   // width ba height er bahire content chole gele
+  overflow: visible / scroll / auto;    // scrol er poriborte auto better
+
+
+
+li:nth-child(3n -2){    
+  color: red;
+};
+3n-2  // 1 theke start hobe.
+  -2   // 2ta kore list item ignore korbe.
+summery:// 3ta list theke 2ta bad dile 1 thake mane 1 list theke start hobe then -2 mane 2ta list item ignore
+           korbe. then 4 list e color dibe . then abar 2ta ingnore korbe then 7 color kobe evabe 
+             hote thakbe.
+// onek beshi item thakle jeta pore likha hobe setar specipity beshi hobe.
+   // css e je rule ta shobar sheshe likhben, sheta apply hobe (jodi selector er specificity same hoy
+
+  //nth-child or nth-of-type     / nth-of-type() eta use korbo.
+// As a general rule, if you want to select an interval of a selector regardless of the type of 
+   element it is, use nth-child. However, if you want to select a specific type only and apply
+    an interval selection from there, use nth-of-type.
+
+
+
+
+
+
+
+example 
+___________
+// html file
+
+
+<style>
+
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-rows: 1fr;
+  grid-gap: 5px;
+  justify-content: center;
+
+}
+.container > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+</style>
+
+
+
+
+
+
+
+
+<div class="container">
+ <div>1</div>
+ <div>2</div>
+ <div>3</div>
+ <div>4</div>
+ <div>5</div>
+ <div>6</div>
+ <div>7</div>
+ <div>8</div>
+ <div>9</div>
+ <div>10</div>
+</div>
+
+
+
+
+// style.css 
+
+.container > div:nth-child(1n) {
+    background: #f17e20;
+  }
+ .container > div:nth-child(2n) {
+    background: #1af149;
+  }
+ .container > div:nth-child(3n+1) {
+    background: #f51d1d;
+  }
+ .container > div:nth-child(5n) {
+    background: #796d6d;
+  } 
+
+// css e je rule ta shobar sheshe likhben, sheta apply hobe (jodi selector er specificity same hoy
+
+age 5n  = 5number item and 10 kore pelbe.   // 5,10
+then 3n+1 = 1 theke start kore 1 er sathe 3 jog kore kore korte thakbe.  // 1,4,7
+then 2n =   2number theke start hoye er sathe 2 kore jog hobe and setar color dibe. // 2,6,4 
+then 1n =  jegula paka pabe sob e color dibe. // 3,9
+
+
+very simple n er jaygay 1,2,3...boshiye dekhe
+n =1 হলে 1n = 1, 2n = 2, 3n + 1 = 4, 5n = 5
+n =2 হলে 1n = 2, 2n = 4, 3n + 1 =7 , 5n = 10
+and so on
+
+
+evabe kore 1n er jonne [1,2,3,4,5...] এমন একটা ধারা পাবেন
+2n er jonne [2, 4, 6, 8...]
+3n + 1 er jonne [1, 4, 7, 10, 13...]
+5n er jonne [0, 5, 10, 15, 20...]
+
+
+
+1n = [0, 1, 2, 3...]
+2n = [0, 2, 4, 6...]
+3n + 1 = [1, 4, 7, 10...]
+5n = [0, 5, 10, 15...]

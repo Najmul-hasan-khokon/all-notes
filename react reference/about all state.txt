@@ -1,0 +1,8 @@
+
+
+রিয়েক্ট এ  যেকোন স্টেট চেঞ্জ  হলেই আমাদের কম্পোনেন্টগুলো  Rerender হবে এবং useEffect() ফাংশন টাও 
+  প্রত্যেকবার কল হবে এবং সেটা React কল করে দিবে । আমাদেরকে কল করতে হবে না।
+
+useEffect ase lifycycle method gula ekbare easy kore diyeche.
+jokhon useEffect er dependancy te kichu thakbe then seta change hole useEffect call hobe.
+return function like componentWillUnmount kore dite pari.

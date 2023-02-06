@@ -1,0 +1,29 @@
+bame method use korle css code repete hobe na.  // youtube theke shikbo
+
+
+1 : inline vs block
+2 : box model  // sob element ekta box . universel selector chara.
+3 : border
+4 : padding
+5 : margin
+6 : box-sizing
+
+
+// sokol element ek ekta box.  like: h1-h6 p span etc....
+
+// by default sokol element er kichu margin padding dewa thake segula ke overrite 
+     korte . *{ margin: 0 ; padding: 0} kore dibo. tahole * sokol element ke dorbe r margin padding
+                                        0 kore dibe.
+
+
+
+// block level element
+    div > h1
+   h1 tototukoi height width nibe jototuko or parent er ache. jemon ekhane div jodi
+          width 200px hoy tahole by default h1 er o 200px hoye jabe pura screen nite parbe na.
+
+
+
+// box-sizing : border-box; 
+    /// use korle child e jotoi margin padding border dei na setar kono effect porbe na parent e.
+         child e margin padding dile parent er width height theke - hoye margin  padding jog hobe.

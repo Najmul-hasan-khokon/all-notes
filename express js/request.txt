@@ -1,0 +1,28 @@
+request object
+________________
+
+raw data , json data, plain text ba cookie pathaile . setake age parse kore nite hobe parser er sahajje.
+
+express.json() , express.urlencodded()  egula ek ekta parser.
+
+cookie parse korar jonno ekta library ache. cookie parser name e.
+
+
+
+
+// normally index.js ba app object je file e ache sei file er bahire kono file e app object ta available nai. onno kono file e setake pete 
+     caile req er vitore pabo.   like req.app
+
+
+
+methods   ei 2ta janlei hobe.
+________
+
+--req.accepts() //client amader ke kon type er data pathacce seta jante caile  req.accepts('html') er vitore type bole dibo like 'html', 'text/html'
+                   req.accepts('json')  // jodi header e json data pathay tahole json hobe. onno kichu pathaile false asbe.
+
+
+
+
+-- req.get() // diye je kono header ber korte pari. mane kon fomate e data pathaice content-type dekte parbo.
+                 req.get('accept')  // text/html

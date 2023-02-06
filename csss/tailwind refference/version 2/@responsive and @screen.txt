@@ -1,0 +1,31 @@
+
+@responsive    // variant er motoi tobe eta custom class jeno break point e kaj kore se jonno.
+
+/* utitlities layer  */
+@layer utilities {  
+  .font-size {       // eta break point dile kaj korbe na.
+    font-size: 30px;
+  }
+}
+
+@layer utilities {
+  @responsive{
+  .font-size {
+    font-size: 30px;
+  }
+}
+}
+
+
+sm:font-size   // evabe jate ui te sm md lg etc.. break point kaj kore se jonno @responsive.
+   // version 3te @responsive nai.
+
+
+
+
+
+@screen // eta media query make kore. 
+
+@screen sm {
+  /* ... */
+}

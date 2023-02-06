@@ -1,0 +1,52 @@
+pwa means...
+Progressive Web App ( PWA) 
+Website k app er moto installed kore use korar functionality k PWA bole
+
+// native app er moto pwa website playstore deploy kora jabe.
+
+// pwa web and desktop android sob kichu ke ek rokom kore pelche mane web destop app 
+ bolte r kichu thaklo na. sob ek rokom hoye geche
+
+// jekono device e kaj korbe. mane jekono device er hardware access nite parbe.
+
+
+// google search koreo pwa website pawa jabe jeheto eta ekta website.
+
+
+// bookmark korte parbo url er maddome app share o korte parbo.
+
+// refresh korte parbo.
+
+
+responsive metter
+__________________
+
+normal website er moto dekte hoile hobe na . ekebare native app make korte jevabe cinta
+korte hoy thik sevabe cinta kore develop korte hobe.
+
+
+
+// offline o website browse kora jabe. e khetre updated data pabo na
+    previouse e je je data gulate visite korci just segulate visite korte parbo.
+// abar kichu kaj kore rakha jabe jokhon internet availabe hobe tokhon data update
+     kore nibe.
+
+
+// website kono message asle notification o pawa jabe.
+
+// installable
+
+
+
+
+
+Websites helps you to get a REMOTE jobs as a Web developer :
+
+→ flexjobs. com
+→ remote. co/remote-jobs
+→ justremote. co
+→ weworkremotely .com
+→ remoteok .io
+→ jobspresso .co
+→ europeremotely .com
+→ wfh .io

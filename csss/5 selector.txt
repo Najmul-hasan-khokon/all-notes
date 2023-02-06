@@ -1,0 +1,5 @@
+universel => *{};
+tag => h1{};
+class => .className
+ID => #idName
+attribute => [href=''] / [type='submit'] etc...

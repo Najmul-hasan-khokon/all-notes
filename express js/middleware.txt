@@ -1,0 +1,109 @@
+middleware ekta simple js function jetar kache req , res object and ekta next() function thakbe.
+
+browser theke kichu reqest korar je midllware function call hoye kichu kaj karbar kore next() call kore
+porer middleware function e pathai dite pare. then socond midlleware kichu kaj kore next() call kore porer midllware e pass kore 
+dite pare .   abar er maje jodi kono kichu response hoye jay tahole r porer midlleware function e jabe na. 
+
+caile middleware function er maddome error throw korte pari and onno middleware diye sei error take catch korte pari.
+
+note: // next('ekhane kichu likle setake error gonno kora hobe')  // success hole next() function paka dite hobe.
+
+
+
+// 5 dhoroner middleware function ache
+ 1: application level middleware function. // const app = express();
+ 2: router level middleware function.  // const router = express.router();
+ 3: error handling middleware function.
+ 4: built in middleware function. // like express.json() , express.urlencodded() etc..
+ 5: third party middleware function. // like cookie parser. jeta ke require korar por ekta function ba hook dey setai middlware.
+
+
+
+// example application level middleware
+    // jokhon kew / url e hit korbe ei function e duke kaj kore next() function call kore middleware one e chole jabe sekhane
+        kaj kore next() er maddome two te jabe ekhane kaj ses kore response kore dibe. application level middleware tai
+          app.use() call kore peramiter e middleware function diye dichi.
+
+app.get('/', (req, res, next)=>{ 
+console.log('home page');
+next()
+})
+
+const mmiddleWareOne = (req, res, next)=>{
+  console.log('i am middleware');
+  next()
+
+}
+
+const mmiddleWareTwo = (req, res)=>{
+  console.log('i am middleware two');
+  res.send(' i am two ')
+
+}
+
+app.use(mmiddleWareOne) // middleware function ke use korte hobe.
+app.use(mmiddleWareTwo)
+
+
+
+
+// evabe router level function thake // router.use(middleware function name dite hobe);
+    router ke kaj koranor jonno app.use(router) dite hobe.
+
+
+
+
+
+-- third party middlware   
+   // app.use(cookieParser()); cookie parse
+
+
+-- built in middlware   
+    app.use(express.json()); etao middlware    return kore.
+
+
+
+-- error handling middleware
+app.get('/', (req, res, next)=>{ 
+console.log('home page');
+throw new Error('this is and error')   // ekhan theke error throw korci . app.use er err ta setake catch kore output diye dibe.
+})
+
+
+app.use((err, req, res, next) => {
+  console.error(err)
+  res.status(500).send('there was a server side error!')
+})
+
+
+note: next('this is and error') diyeo error throw korte partam. ekti common error handling middleware niye nibo. error nite caile 
+                                 function er peramiter e 4ta peramiter dite hobe . ta na hole express cinbena kontar ki kaj
+                                     like : (err, req, res, next)
+
+
+
+
+-- configurable middleware function
+    // sadaronote middleware function e amra data pathaite pari na. karon se sudu req, res and next() korte pare.
+         maje modde peramiter hisabe amader ke vibinno dhoroner data nite hoy tokhon segula amra middlware function e nite parbona
+          but normal function likhe tar vitore peramiter akare object array etc.. niye sei function er body te 
+            middleware function return kore dite pari.
+
+    const configurableFunction = (options)=>{
+  return function(req, res, next){
+    if(options.log === true){
+      console.log('i am log');
+      next()
+    }else{
+      throw new Error('failed to log')
+    }
+  }
+}
+
+app.use(configurableFunction({log: true}))
+
+
+app.use((err, req, res, next) => {
+  console.error(err)
+  res.status(500).send('there was a server side error!');
+})

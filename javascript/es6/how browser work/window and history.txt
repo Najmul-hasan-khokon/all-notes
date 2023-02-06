@@ -1,0 +1,15 @@
+// location ba window.location theke browser er url dekhte parbo.
+      domain / subdomain / query / & diye diye ektadik query jog kore /
+        hash url htpps prtocol / http ache.
+
+
+
+// history diye browser er history navigate korte parbo.
+     history.go(1) // 1 step age jabe.
+     history.back() // 1 step pichone jabe.
+     history.forward() // 1 step age jabe.
+     history.go(-3)  // 3step pichone jabe. 
+// evabe js diye history ke kaje lagaiye user ke ek page theke onno page e navigate koraite pari.
+
+
+npm install / er poriborte    // yarn dileo hobe

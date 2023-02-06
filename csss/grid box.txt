@@ -1,0 +1,116 @@
+// column width and row height
+
+
+-- responsive er jonno fr use hoy like: 1fr 3fr 
+--- repeat(auto-fit, minmax(400px , 1fr));
+
+
+container er property
+______________________
+  height: something;  // obossoi ekta height dibo na hoy row height thik vabe kaj korbe na.
+  display: grid; // age display: grid; korbo.  then amra koyta row hobe and koyta column hobe seta bole dite pari.
+  grid-templete-columns: 100px auto 100px ; // pura take 3 vag kore 2 vag 100px kore nibe baki ta auto niye nibe.
+  grid-templete-columns: 1fr 2fr;  // pura jayga ke 3vage vag korbe then bam e 1 vag r dan e 2 vag nibe. it's responsive.
+  grid-templete-columns: repeat(3, 1fr);  // 3ta column hobe soman soman ba 1fr kore.
+  grid-gap: 2px; // row and column er majkhane gap hobe.
+  grid-row-gap: 3px; // sudu row er majkhane gap hobe. evabe column eo dite pari.
+ - grid-auto-flow: dense;  // kono item jodi jaygar ovabe faka thake tahole dense algoridm er maddome seta purno hoye jabe.
+                                  eta ager jinis ke pore porer jinis ke age nite pare.
+
+  grid-templete-columns: repeat(12 , 1fr) // bootstrap er moto 12 column er layout banaite pari.
+
+
+
+
+// shorthand of   grid-templete-columns and   grid-templete-rows.
+         grid-templete: row / column;    // grid-templetes: 1fr 3fr / 1fr 1fr;
+         grid-templete: repeat(3 , 1fr) / repeat(2 , 1fr);    // row 3ta soman kore r column 2ta soman kore.
+
+
+
+/ alignment container er vitore hobe.
+    justify-content: start / center / end / space-around/ space-between / space-evenly;  //eta kaj korbe horizontaly.
+    align-content: start / center / end / space-around/ space-between / space-evenly;
+    justify-items: end;  // eta sudu container er item gula ke end kore dibe. ager gula pura content ke move korce.
+                             eta sudu item er box gular modde move korbe.
+    align-items: center;  // eta verticaly kaj korbe.
+
+
+
+
+
+
+
+items er vitore hobe item boro choto korte.
+_______________________
+    grid-column-start: 1;  // 1 cloumn theke suru koro and 3 column e giye ses koro.
+    grid-column-start: 3;
+    grid-column: 1 / 3;     // ager gula shorthand.
+    grid-column: 1 / -1;    // etao same kaj korbe. 1 column theke start hobe ses er age ba end porjonto giye ses hobe.
+    grid-column: 1 / span 3;   // etao same 1 theke start how 3 column porjonto choriye jaw. 
+   
+    grid-row: 1 / span 2;  // ekoi vabe row er khetreo lekha jay.
+
+    justify-self: center;  // specipic item alignment korte eta use hoy.
+
+
+
+---// visualy item sorano norano korte hole
+// container er vitore.
+   grid-templete-areas:  
+        'h h h h h h h h h h h h'
+        'm m m c c c c c c c c c'
+        'f f f f f f f f f f f f';
+
+
+// item er vitore .
+    .header{ grid-column: h;}; // evabe item e bole diye pari header menu cotent footer koto column kore chorabe.
+    .menu{ grid-column: m;}
+
+
+
+.top-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    'showcase showcase top-box-a'
+    'showcase showcase top-box-b';
+}
+
+/* Showcase */
+.showcase {
+  grid-area: showcase;
+  min-height: 400px;
+
+};
+
+
+
+----//// advance concept.
+____________________________
+  auto-fit   // window boro korle content ses hole dan pase jayga khali hobe na. etai beshi use korbo.
+  auto-fill  // window boro korle content ses hole dan pase jayga khali hoye jabe.
+  minmax()    // first peramiter e minimum width dite parbo and second peramiter e minimum width na paile default 1fr nibe.
+    grid-templete-columns: repeat(auto-fit , minmax(400px , 1fr));
+    grid-templete-rows: repeat(1 , 1fr) // ekta row hobe 1fr height hobe. aro jodi row thake oigula automatic niye nibe.
+                                              automatic row gulake handle korte.
+    grid-auto-rows: 1fr;  // automatic jegula make hobe orthad
+                              // jegula bole dibo na segula automatic 1fr kore nibe. ba px diyeo hardcort kore dite pari. like: 20px
+
+
+
+- image fete gele .
+     object-fit: cover;  // dite pari. just jei img ke cover korbo sekhane bole dibo.
+                               eta dile crop kore nijer ratio onujai 100% mantain korbe.
+
+   -- grid-column: auto / span 2;  // auto er mane je kono jayga theke suru hoye 2 column choriye porbe.
+
+
+
+
+
+body {
+  display: grid;
+  place-items: center;
+}
+ 

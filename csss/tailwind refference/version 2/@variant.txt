@@ -1,0 +1,28 @@
+active , hover, focus etc.. egulake variant bole.
+
+
+
+version 2te variant chilo.    // variant er meaning বৈকল্পিক
+version 3te variant nai.
+
+/* utitlities layer  */
+@layer utilities {
+  .font-size {
+    font-size: 30px;
+  }
+}
+
+// ui te jodi font-size take hover kori tahole kaj korbe na. karon ami sudu size set koreci
+     / hover kintu set kori nai.
+
+@variants focus, hover {    // hover , focus etc.. allow korte @variant er vitore dite hobe. aro onek dhoroner variant ache.
+  .rotate-0 {
+    transform: rotate(0deg);
+  }
+  .rotate-90 {
+    transform: rotate(90deg);
+  }
+}
+
+
+version 3te hover etc.. dileo kaj korbe. coz variant er jamela nai ekhane.

@@ -1,0 +1,10 @@
+
+
+
+
+position: absolute; // normal  document flow theke harai jay.
+position: fixed; // normal  document flow theke harai jay.
+position: relative; // se tar nijer sapekkhe change hoye top bottom left right dile. ager jayga chere dey na.
+                         // normal  document flow theke harai jay na.
+
+position: sticky; // se tar parent er area te sticky hobe er bahire gele r hobe na.

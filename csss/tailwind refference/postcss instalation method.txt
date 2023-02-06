@@ -1,0 +1,5 @@
+eta pore dekbo
+
+// pray modern sokol library ei postcss use kore.
+
+// tailwind muloto postcss er ekta plugin hisabe duke jay

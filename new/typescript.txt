@@ -1,0 +1,168 @@
+.ts   // type script extension
+// sokol valid js hocce valid typescript
+// sass er moto ts file run korle js file create hoye jabe.
+console.log('hello world') // eta kivabe compile ba run korbo.
+      just type in terminal // npx tsc index.ts
+
+
+
+
+
+// free course drive link
+ 
+https://drive.google.com/drive/folders/1trBBFsXxPIcBIB4cODbijAZDYnxfypK9  // ui and ux design. graphics design and programming releted tutorial
+https://drive.google.com/drive/folders/14FkaGZfs80ayx8Uj6ZeLxMZAzGbqqMgU // pdf and cheat sheet frogramming releted
+ 
+
+
+https://www.figma.com/file/t8qolnOAK308vTfE0cLpfd/ToDo-App  // todo app tasnim eta korche
+https://www.figma.com/file/cZa2eO85mfWGaRS7zjttWl/Portfolio-Web-Design-(Community)?node-id=0%3A1  // portfolio
+
+
+tips-1    
+________
+// releted sob pete
+"javascript function" // ja asbe sob javascript function releted asbe.
+javascript function -youtube    // jodi google e search er somoy youtube video dekhte na cai. just -something   likhbo.
+javascript function +youtube  // + dile r article ba blog asbena, sob youtube video asbe.
+
+
+
+tips-2   
+________   Get a Imformation from specipic Website
+
+  spread operator :w3schools   // w3schools e spread operator niye ja ache sob show korbe. just :websiteDomainName
+  rap :prothom alo             // dorson releted prothom alor sob chole asce.
+                  :mdn.com // .com dile valo na dile prblm nai
+
+
+tips-3
+_______  Find Many similar website
+   releted: w3schools.com   // w3schools type er joto website ache show korbe. mane alternative r ki.
+   releted: vs code
+      
+
+
+tips-4
+_______ Find specipit file formate
+  css cheat sheet filetype:pdf in 2022    // 2022 saler css cheat sheet pdf gula suggestion e asbe. just filetype:jpg/png/pdf
+  css cheat sheet filetype:png     // pn type er sob asbe.
+
+
+tips-5
+________ Find a information with pictures
+
+           click on the image then search by image.
+       or type on search box. image.google.com
+
+
+
+
+animation make korte // alpine.js
+
+https://youtubemultidownloader.net/playlists.html
+
+
+
+
+top-10 windows app
+_______________
+1: sharex  // for taking screenshot and copy text from video
+2: snip and sketch // built in with windows for taking screenshot. shortcut: windows+shift+s
+
+00:00 - Intro
+01:05 - ShareX
+02:50 - QuickLook
+03:58 - Notion
+05:58 - Microsoft Edge
+07:18 - Clipboard Manager
+08:09 - Flow Launcher
+08:57 - Espanso
+10:10 - Everything
+10:53 - Google Drive
+11:46 - F.Lux
+
+
+
+some shortcuts
+________________
+ctrl+k   // to search anything 
+ctrl+l   // page link copy hoye jabe
+ctrl+\   // left menu show and hide hobe
+ctrl+b  // text bold hobe, age text select kore nite hobe
+ctrl+i // italic hobe
+
+
+// text er je kono jaygay /turn   diye text ke vibinno formate e convert kore /red background red pelte pari.
+                                                                              bg o change hoye jabe.
+    example:  how to copy/turnbold text 
+
+
+// khub easily image o resize kora jay.
+
+/callout  // sundor ekta block asbe
+/templete button      // onek kichu korte parbo eta diye.
+      // caile amra text copy kore heighligh and link add korte pari.
+       // ekta page er mode arekta page er link kore dite pari. ba youtube google je kono website er link add kore dite pari.
+        // share thake link copy kore karo sathe share korte pari. abar se ki edit korte parbe naki parbena setao set korte pari.
+         // ekta blog er moto img, video, text milai kaj korte pari.
+           // video embed korar somoy koto minute theke start hobe seta bole dite pari.
+
+/divider    text er upore niche margin ba padding dite. er poriborte  3ta --- dileo hote pare.
+
+
+dillinzer = markdown likha jay tobe traditional way te.
+    // markdown means like: #how to create.    *dlfkld dklfldf. #kdfdl **lkdf d.   / vibonno formate e dekhabe
+
+notion er sathe default markdown ache seta holo=  WYSIWYG
+   / dillizer er code notion eo kaj korbe.
+
+"+space  | emon hobe
+>+space
+"ldflk"
+#lkdkfld
+
+
+
+
+creat multiple layout or column
+_____________________
+just drag and drop kore content er pase bosai dilei column hoye jabe.
+    // mane ektar pase arekta mouse diye drag and drop kore chere dibo.
+  // jekono jaygay ba block er vitore multiple column likhte parbo.
+   // kono element jodi drag kore pase rakha na jay tahole ekta inline block niye then 
+     ota drag kore column hoye gele inline block delete kore dibo.
+notes: mobile e use korle single column ei likha uchit.
+        
+
+
+syncblocks
+___________
+ekta create kore seta copy kore je kono jaygay rakha jay, tobe se khetre ek jaygay change korle onno jaygay o change hobe.
+
+
+
+
+database
+_____________
+
+
+
+
+
+indify.co   / ei site onek kichu pawa jay notion er like weather
+
+
+
+gofullpage chrome extension  // full page website screenshot niye nibe.
+
+
+
+
+
+Aren't there supposed to be two meetings per week?
+I am an examinee.
+
+
+exusted
+

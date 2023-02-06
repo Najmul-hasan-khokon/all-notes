@@ -1,0 +1,13 @@
+f1, f2, ctl+space = bangla keyboard mode start korar jonno
+f1 = help file dekhay
+f2 = folder ba file er name rename kora jay
+f3 = search / find kora jay
+f4 = address bar focuss korar jonno
+f5 = refress kore
+f10 = menu command e jawar jonno
+f11 = internet browser gulake full screen kore
+sperm
+
+
+Ctrl+Shift+Tab  = to go previous/ left side tab
+Ctrl-Tab        = to go next/ riht side tab

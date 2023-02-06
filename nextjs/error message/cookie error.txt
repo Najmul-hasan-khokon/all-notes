@@ -1,0 +1,22 @@
+SyntaxError: Unexpected token u in JSON at position 0
+
+
+useEffect er vitore cookie get korle error asena.
+
+
+
+example
+__________
+
+  const [cookie, setCookie] = useState([]);
+  const cook = [
+    { id: 1, name: "najmul" },
+    { id: 2, name: "rasel" },
+    { id: 3, name: "kasem" },
+  ];
+  Cookies.set("Frinds", JSON.stringify(cook));
+
+  useEffect(() => {
+    const result = JSON.parse(Cookies.get("Frinds"));
+    setCookie(result);
+  }, []);

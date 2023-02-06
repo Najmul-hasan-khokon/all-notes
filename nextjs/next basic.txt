@@ -1,0 +1,117 @@
+// import { useRouter } from "next/router";
+
+// pages folder e ja likbo tai route hisbe kaj korbe.
+url e dynamic data pass korte caile . oi file er name [id].js  // orthad square brakats diye gire dite hobe.
+                then id take useRouter theke query er theke id take pabo.   // useRouter ta next/router theke import korte hobe.
+
+
+
+
+
+
+
+
+search engine optimization   // meta er jonno alada ekta component niye sekhane props recive kore kaj korbo.
+______________________________
+// mane ki ki keyword er upore amra page take rank korte caiteci.
+          // meta data search engine ke sahajjo kore amar page somporke overviwe dite.
+
+  keyword coma diye diye likbo.
+
+
+
+    <Head>
+        <title>About</title>
+        <meta
+          name="description"
+          content="Buy high-quality bicycle parts and save money while riding through Nevada. "
+        />
+        <meta
+          name="keyword"
+          content="next js master class by Najmul, master class, nextjs"
+        />
+      </Head>
+
+
+
+
+
+link
+_______
+import Link from "next/link";
+
+
+   <ul>
+       <li>
+          <Link href="/">
+            <a>home</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/about">
+            <a>about</a>
+          </Link>
+        </li>
+      </ul>
+
+
+
+
+----
+getServerSideProps and getStaticProps alada holeo peramiter and kaj korar way ta same.
+
+// getStaticProps  eta diye korle route er id recive korte getStaticPaths er dorkar hoy.
+
+
+
+
+// example server side genaration
+______________________________________
+// server side rendering . 
+            // by default getServerSideProps er context e route er id ta peye jabo.
+// export async function getServerSideProps(context) {
+//   const res = await fetch("https://jsonplaceholder.typicode.com/users");
+//   const users = await res.json();
+
+//   return {
+//     props: { users }, // will be passed to the page component as props
+//   };
+// }
+
+
+
+// example static genaration
+______________________________
+
+// summery : npm run dev korar time e getStaticPaths er maddome server theke data ene html ba document genarate kore rakhe
+              then  getStaticProps er kache ekta kore id dey r output dekhay sekhetre kintu server theke abar data fetch kore na
+                  just build korar somoy je html file gula genarate korce oigula dey.
+
+
+// static side genaration
+// getStaticProps eka kaj korte pare na getStaticPaths lage.
+
+export async function getStaticProps(context) {
+  const res = await fetch(
+    "https://jsonplaceholder.typicode.com/users/" + context.params.id
+  );
+  const user = await res.json();
+
+  return {
+    props: { user }, // will be passed to the page component as props
+  };
+}
+
+// 
+export async function getStaticPaths() {
+  const res = await fetch("https://jsonplaceholder.typicode.com/users/");
+  const users = await res.json();
+
+  const ids = users.map((user) => user.id);
+  const paths = ids.map((userId) => ({ params: { id: userId.toString() } }));
+
+  return {
+    paths,
+    fallback: false, // See the "fallback" section below
+  };
+}

@@ -1,0 +1,15 @@
+specipity er khetre konta age konta pore seta metter na.
+   jeta more specipit setai ui te show korbe.
+
+
+/* utilities */
+.my_color {
+  @apply bg-slate-600 text-white px-2 p-2;   // ekhane px-2 er specipity beshi karon eta more specipic. p-2 kaj korbe na.
+}
+
+
+
+.my_color {
+  @apply bg-slate-600 text-white px-2;  
+  @apply p-2;    // jetar specipity kom setar jodi prioruti dite cai tahole multiple @apply dibo.
+}

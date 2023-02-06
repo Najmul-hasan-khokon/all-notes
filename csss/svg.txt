@@ -1,0 +1,42 @@
+undraw  // svg image
+
+
+httpshttps://www.smashingmagazine.com/2021/03/svg-generators/#svg-animation-tools
+
+
+https://getwaves.io/
+
+https://boringavatars.com/    // svg icon
+
+
+
+
+
+
+svg type
+___________
+animation
+avatars
+backgrounds
+code snippets
+compression
+cropping tools
+data visualization
+doodle patterns
+editors
+favicon
+filters color matrix mixer
+geometric shapes
+icon transitions
+JPG/PNG → SVG
+path visualizers
+polygons
+repeating patterns
+squircicles
+section dividers
+SVG assets manager
+SVG → JSX
+SVGs → SVG sprites
+text warping
+waves
+woodworking patterns

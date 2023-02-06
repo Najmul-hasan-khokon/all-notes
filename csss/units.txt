@@ -1,0 +1,86 @@
+/*
+Absolute unit: px, en, pt, pc, in, Q
+Relative unit: em, rem, vh, vw, %
+*/
+
+
+
+-- rem // root element ba browser er default font-size nibe.
+           eta 16px ba erokom thake. eta root element er size er sapekkhe change hoy.
+   /// 16px = 1rem
+
+
+
+-- vw, vh // tar browser er view er sapekkhe change hoy.
+
+
+
+
+
+-- percentage  // parent er sapekkhe change hobe.
+                    / mane parent er koto percent caitechi.
+
+// exmple - 1
+.percentage{
+  width: 100%;
+  height: 100%;
+  background-color: #d1411e;
+}
+.percentage_inner{
+  width: 50%;  // 100% er 50% hobe. 100% height er 200px hobe.
+  height: 200px;
+  background-color: #1ed15a;
+}
+
+
+// exmple - 2
+.percentage{
+  width: 50%;
+  height: 100%;
+  background-color: #d1411e;
+}
+.percentage_inner{
+  width: 50%;  // 50% er 50% hobe. 100% height er 200px hobe.
+  height: 200px;
+  background-color: #1ed15a;
+}
+
+// exmple - 3
+.percentage{
+  width: 600px;
+  height: 100%;
+  background-color: #d1411e;
+}
+.percentage_inner{
+  width: 50%;  // 600px er 50% mane 300px. 100% height er 200px hobe.
+  height: 200px;
+  background-color: #1ed15a;
+}
+
+
+// exmple - 4
+.percentage {
+  font-size: 26px;
+}
+.percentage_inner {
+  font-size: 100%;  // 26px er 100% mane 26px hobe.
+}
+
+
+
+
+
+
+-- em // tar parent er relative size ta nibe.
+        // nested element hoile jamela hoye jabe.
+
+<div class='main'> 
+<p class='main-pera> najmul </p>
+</div>
+
+.main { font-size: 20px}
+.main-pera { font-size: 1em} // ekhane 1em mane 20px. parent er kache ja thakbe tai nibe.
+                                  immediete parent e na thakle porer parent theke nibe.
+
+.main { font-size: 20px}
+.main-pera { font-size: 1.5em} // mane parent er size er der gun 30px.

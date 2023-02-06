@@ -1,0 +1,159 @@
+ backface-visibility: hidden; // eta dile card flip korle front and back dekha jabe.
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+// kono kichu center e ante gele sudu top left 50% dilei center hobena. transform translate -50% dite hobe.
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
+
+horizontaly alignment
+______________________
+justify-start/center/end etc....  // pura content move hobe
+justify-items-start/center/end etc... / items er modde move hobe.
+
+
+vertically alignment 
+_____________________
+items-start/center/end etc...   / sudu items gula move hobe se tar jaygar modde.
+content-start/center/end/between/evenly/around etc...  / pura content ta move hobe
+
+
+horizontaly and vertically alignment. it will be used with grid container
+_______________________________________
+place-content-start/center/end/space-between etc...   // insted of usign two property, we can use one . 
+
+
+
+in items of grid
+____________
+justify-self-start/center etc....   // horizontally
+self-start/center etc....    // vertically
+
+
+in items of grid
+_________________
+place-self-start/center etc...  // it is combination of the justify-self and align-self
+
+
+
+
+
+
+
+
+
+
+flex - thirus
+______
+
+// flex-row dan dik thke bam dike jabe
+  1 2 3 4 5 6
+// flex-row-reverse bam dik theke dan dike jabe
+                                                6 5 4 3 2 1
+
+
+// reverse use korle ektu deferent behaiveir dibe. content left e thakle right theke start hobe. right e thakle left theke start hobe.
+// wrap dile text er line break hobena. just item niche chole jabe jodi jayga na pay.
+
+horizontaly alignment
+______________________
+justify:start/center/end/stretch/baseline etc...
+
+
+vertically alignment 
+_____________________
+         
+item-start/end/stratch/baselinet etc...   // align-items: center;
+         // ekta item er height barale sob gular height bere jay. se kehtre by default //// item-strech thake
+         // stretch same line er kono ekta item er pura height niye ney. sob item e soman height hobe.
+conten-start/center/end/around etc...   // align-content: center;
+        // height and flex-wrap er sathe / content kaj kore
+        // jokhon onek height thakbe wrap dile je jar ceil e chole asbe. jar jototuko height ache setai nibe.
+
+
+
+
+
+
+in child item of flex
+_________________________
+self-start/center/end/stretch/auto    // align-self: start
+       // child er text jototuko ache tototuko niyei tar cel e move korbe.
+       // stretch na cailei eta korbo. stretch muloto pura height dore rakhe.
+
+
+
+
+
+item grow
+__________
+flex-grow-1   // bydefault 0 thake.
+            // jei item ke grow korbo sei item pura available space nijer modde niye nibe.
+            // multiple item er modde grow korle space bag kore nibe jodi thake.
+            // navigation e grow beshi usefull majkhane onek space thakle grow kora jay then kokhono er majkhane
+                 kichu lagle rakha jay easily.
+
+
+
+item shrink
+____________
+   // eta grow er biporit
+
+flex-shrink-0    // by default 1 thake, mane shrink kore
+      // jodi kono child er text jaygar ovabe niche break hoye jay tahole flex-shrink-0 kore dile text er jonno jototuko jayga 
+           / dorkar tototuko niye nibe. ek line thakbe text.
+      // shrink-0 korle item er jototuko jayga dorkar tototukoi nibe.
+
+
+
+shorthand property of flext-grow, shrinkk and basis     / flex: 1 1 50px;
+______________________________________________________
+tailwind e 3tar shorthand er kono property nai.
+flex-1    // jodi multiple item e width control korte cai. mane k koto width nibe.
+  
+
+
+
+customize  tailwind.config inside the extend property
+_______________________
+flex: {                 // jeheto tailwind e shorhand nai. tai customize kore nibo.
+  '1/3': '1 1 33%',
+  '2/3': '1 1 67%',
+  '1/4': '1 1 25%'
+}
+
+
+then use like this in tailwind as a utility
+___________________________________________
+ flex-1/3 
+ flex-2/3 
+ flex-1/4 
+
+
+// basis o use korte pari.
+basis-1/3
+basis-2/3
+basis-1/4
+      // tobe etay grow and shrink thakbena. sudu width er kaj korbe.
+
+
+
+
+order
+_______
+order-1/2first/last/none 
+
+
+
+ 
+space-x-1   , space-y-1 , space-1 for both side.
+   // flex e jeheto item er modde space dewar kono property nai tai tailwind ekta utility niye asce seta holo space

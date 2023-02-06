@@ -1,0 +1,86 @@
+amra raw mongodb er poriborte mongoose use korbo. ete kore onek onek code kom likha lagbe + command gulao easy.
+
+// mongoose hocce odm mane object data modeling for node js.  
+    / eta express er sathe mongodb database connect korte help korbe.
+
+
+// amra just mongoose ke node js er sathe connect kore dibo. mongoose in the backend mongodb Driver er moddome se mongodb ke
+   connect kore nibe. eta niye amader cinta korte hobe na.
+
+
+---promise handle korar khetre . hoy callback na hoy async await use korte hobe.
+                                  // async await use korle obossoi try catch block use korbo because error asar sombabona ache.
+
+
+-- mongoose e crud operation korar khetre amra amader icca mote model er property gular upor operation calaite pari.
+
+suppos todo.find()   // filter korte pari. ek ba ekadhik peramiter dite pari. sese ekta callback function pabo jetar first peramiter e
+                      err and second peramiter e data pabo.  (err, data)
+
+
+// sob gula model property ekoi vabe kaj kore .
+
+
+
+-- get data
+user.find()  // eta ekta array dey multiple users pete. caile filter koreo data pete pari. se khetre object e data gula thakbe.
+user.findOne() // single user pete.
+
+--post data
+user.save() // single user database save korar jonno. 
+user.insertMany()  // multiple data database e post korar jonno
+
+-- update / put data
+user.updateOne()  // single data update korar jonno.
+user.updateMany()  // database multiple data update korar jonno.
+user.findByIdAndUpdate()  // update er age document jodi pete cai.
+
+
+-- delete data
+user.deleteOne()  // single data delete korar jonno.
+user.deleteMany() // multiple data dalete korar jonno.
+user.findByIdAndDelete() // delete er ager record ba document jodi pete cai.
+
+
+
+--// some extra mehtod
+$set: // eta diye data update korte parbo. jei jinista update korbo. just $set: {} object vitore diye dibo.
+
+
+-- some chaining methods
+.select().limit().exec()
+
+
+// data get korar khetre amara method chain korte pari.
+.select()  // .select({_id: 0)} // mane id ta dekhaba na.   jodi name: 0 kore dei. tar mane name o dekhaba na.
+                                      mane konta dekhabe r konta dekhabe na seta bole dite pari.
+
+// method chaining er modde chole gele amra callback function ta dite parbo na. tai callback function dewar jonno etar o ekta
+ chain method ache.
+.exec()   // .exect((err, data)=>{}) 
+
+
+.limit() // .limit(5)   mane 5ta data dekhate cai.
+
+
+
+
+// example
+
+router.get("/", (req, res) => {
+  User.find({ name: "najmul" })
+    .select({ age: 0 })
+    .limit(1)
+    .exec((err, data) => {
+      if (err) {
+        res.status(500).json({
+          error: "there was a server side error",
+        });
+      } else {
+        res.status(200).json({
+          result: data,
+          message: "users were getted successfully!",
+        });
+      }
+    });
+});

@@ -1,0 +1,26 @@
+npm install -g sanity@cli  // eta ekbaroi kora lage. 
+sanity init  // to create a project with sanity
+sanity     // ki ki command ache segula dekha jabe.
+sanity start  // to start server
+sanity deploy  // to deploy sanity website
+
+
+it's realtime database  // local e kichu change korle react site e change hobe. react e korleo local e change o
+
+https://www.sanity.io/docs  // documention
+https://slack.sanity.io/    // sanity developer commiunity
+https://groq.dev // query prectice kora jay.
+
+
+// we will fetch all our food categories from Sanity, either using GROQ or GraphQL. For this guide, 
+       we will make use of GROQ.
+  /GROQ (Graph-Relational Object Queries) is a declarative language designed to query 
+       collections of largely schema-less JSON documents.
+
+
+
+query  *[]
+______
+  / *[_title == 'food']
+
+10,000 hazar kuti = 1 billion us dollar

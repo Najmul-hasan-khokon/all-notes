@@ -1,0 +1,46 @@
+// externel file e jodi amra kono router make korte cai. tokhon amra express.router() call kore router object banai nibo.
+emon hote pare amader ke aldda alada task complete er jonno alada alada router dorkar hote pare.
+tokhoni amra external file e router niye seta diye get , post, put, delete kore module.exports = router kore dibo.
+
+then home page e require kore just app.use() kore nibo.
+
+
+
+
+
+// example external file e
+const express = require('express')
+const adminRouter = express.Router()
+
+adminRouter.get('/', (req, res, next)=>{
+  res.send('home')
+})
+adminRouter.get('/dashboard', (req, res, next)=>{
+  res.send('dashboard')
+})
+
+module.exports = adminRouter
+
+
+
+// home page e 
+const express = require('express')
+const app = express()
+const adminRouter = require('./handle')
+
+app.use('/admin', adminRouter)
+
+
+
+
+
+-- router.all('*', loadUser) // eta sob route ei hit hobe like: get, post, put, delete. 
+                                 mane jei kono url e hit korle loadUser function call hobe.
+
+
+
+
+--router.param('user', function (req, res, next, id) {})  // eta pore shikbo.
+
+
+--router.route()  // app.route er motoi. common url diye sokol method e routing korte parbo.

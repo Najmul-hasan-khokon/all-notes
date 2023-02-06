@@ -1,0 +1,24 @@
+
+@apply
+_________
+eta maddome amra custom class niye @apply method diye common code gula ke benge pelte pari.
+    // code repeat hole utilities ke group kore use korbo.
+
+
+@tailwind base;   // base utilities browser e default settings gula thake.
+@tailwind components;  // component gula component e thake. onek gula utilities mile ekta component hoy.
+@tailwind utilities;   // sokol utilitis jemon margin padding etc.. egula ek ekta utilitis
+
+/* group utilities */
+.my_color {
+  @apply bg-slate-600 text-white;     // ekhon amader ui te className="my_color"  dile color peye jabe.
+}
+
+
+
+
+
+// base url create korte
+export const axiosInstance = axios.create({
+  baseURL: `https://lwncrudoperation.herokuapp.com/`,
+});

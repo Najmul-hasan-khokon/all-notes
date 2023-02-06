@@ -1,0 +1,30 @@
+flex
+______
+
+ami jodi kono fixed height width na jani .   content er with height content er upore deffend korbe and jodi 
+colum er size boro choto thake tahole flex better
+kalke kichu text add hobe , porsu kichu text remove hobe so, content er upor control dite cai . tahole flex use korbo
+
+size na janle flex er upore diye dibo flex setake handle korbe
+
+
+grid
+_______
+content er width height soman hole grid use korbo. emon layout flex diye korle complex hobe basis aro onek kichu dite hobe
+
+
+
+
+
+responsive
+_____________
+  tailwind e age mobile responsive korbo then desktop
+
+
+
+
+sundor sundor webisite ache prectice korar jonne  // landingfolio.com  or https://www.frontendmentor.io/ 
+                                                                               eta te challenge niye kaj kora jay
+
+
+// prectice korar jonno ekta section sreenshot nibo then setar upore kaj korbo. pura web site dorbona

@@ -1,0 +1,56 @@
+best prectice
+______________
+  css file e tailwind er kono kichu change na kore tailwind.config.js file customize korle onek subida
+     ache.  hight level applicaiton na hole ei file hat dewar dorkar nao hote pare.
+  
+
+
+
+ // build time html js jsx e tailwind er jei class use hoice segula ke se just build korbe.
+        baki class gula ignore korbe. 
+
+// purge jeta kore file er size choto kore pele
+     // purge er meaning hocce clean kora.
+
+
+// tailwind.config.js
+module.exports = {
+    purge: [         // je je file allow korte cai just bole dibo. se just oi name er file giye giye khojbe.
+    './src/**/*.html',
+    './src/**/*.js',
+    './src/**/*.jsx',
+  ],
+
+}
+
+
+///// version 3te purge er poriborte content use hoy.
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+
+
+
+
+
+customize
+______________
+  // tailwind er default kichu customize korte caile theme object e hat dibo.
+  // extend er bahire kichu change korle tailwind er default jinis gula replace hoye jabe. example: colors:{ blue: 'blue'} ekhon
+                                     / text-blue dile sudu blue pabo. r kono color pabona cause extend er bahire lekhay replace hoye geche.
+
+
+// extend er vitore likhle new property hisabe onno gular sathe add hobe.  example: colors:{ blue: 'blue'} ekhon
+     / text-blue dile blue er sob color to thakbei jemon blue-50, blue-100 etc. tar sathe sese ei color tao pabo.
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  darkMode: "class", // media
+  theme: {
+    extend: {    // tailwind er kichu change korte caile extend er vitore korbo. tahole sokol utilities muce jabe na.
+       colors: {
+          grey: '#d3k53k3',  // bg-grey diye amader custom color access korte parbo. je kono name e property name dewa jabe.
+       }
+    }, 
+  },
+  plugins: [],  // third party plugin just koma diye diye bole dite pari.
+};

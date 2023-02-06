@@ -1,0 +1,105 @@
+
+const fruits = ["Apple", "Banana", "orange", "guava"];
+const number = [7, 4, 2, 5];
+const string = 'my name is banana';
+
+array methods
+________________
+fruits.join(" hi ") // Apple hi Banana hi karim hi rakib
+                    / eta array ke string kore dibe plus items er maj khane hi jog kore dibe.
+
+fruits.fill("najmul", 1, 3)  // ['Apple', 'najmul', 'najmul', 'rakib']
+                                / 1 index theke start hoye 3 er ag porjonto najmul diye replace hobe.
+fruits.concat(string)   // array er sathe string keo concat kora jay. new array return kore.
+
+
+
+
+
+map() // array items iterate korte hole map er vitore kaj korte hobe.
+const result = fruits.map((v) => v === "orange"); // [false, false, true, false]  
+console.log(result); / condition dile true false er new array dibe.
+const result = fruits.map((v) => v);
+console.log(result);   // ['Apple', 'Banana', 'orange', 'guava'] / new array return kore.
+
+
+const result = fruits.filter((v) => v === "orange" || v === "guava");
+console.log(result);  // ["orange" , "guava"]   
+                         / eta new array return kore. filter er vitore code execute korte true false asbe.
+                          / tai variable e rakhte hobe.
+
+
+fruits.find((v) => v === "orange" || v === "guava")  // orange
+                    / jeta age match korbe take return korbe. r eta string dey.
+
+forEach() // forEach() method returns undefined. etar vitore code likte hoy. 
+                             / condition dile true false retrun korbe. eta thke code return kora jay na.
+ fruits.forEach((item, index, arr) => {
+    console.log(item);
+  }); //Apple
+        Banana
+        orange
+        guava
+
+The sort() sorts the elements of an array.
+The sort() overwrites the original array.
+The sort() sorts the elements as strings in alphabetical and ascending order.
+(negative, zero, positive) value. ei 3dhoroner value return korbe.
+sort() // ["Apple", "Banana", "orange", "guava"];
+
+const result = number.sort((a, b) => a - b);  // assending vabe sajabe.
+console.log(result); // [2, 4, 5, 7];      / number hole peramiter niye seta diye sort korbo.
+
+const result = number.sort((a, b) => b - a); // desending vabe sajabe.
+console.log(result); // [7, 5, 4, 2];
+
+reverse()
+
+fruits.findIndex((value, index, array) => value === "orange")  // 2
+                               / condition er maddome array er index number ber korte
+
+
+Definition and Usage reduce
+The reduce() method executes a reducer function for array element.
+The reduce() method returns a single value.
+The reduce() method does not execute the function for empty array elements.
+The reduce() method does not change the original array.
+
+reduce() // array item te sum ba jog korte help kore.
+     //reduce(callbackFn, initialValue)
+  const number = [7, 4, 5];
+  const result = number.reduce((previousValue, currentValue) => previousValue + currentValue, 0);
+                             // intialValue soho jog hobe ekhane jodi intialValue 5 hoto tahole result 21 hoto.
+  console.log(result);  // 16
+
+
+
+
+
+push() pop()
+shift() unshift()
+
+slice(startNumber, endErAgPorjontoNumber)  // new array return korbe. kono kichu kete ante. main array change kore na.
+
+splice()  // eta main array ke change kore pele.
+  const numbers = [65, 44, 12, 4];
+  const result = numbers.splice(0, 2);  // 0index theke 2ta element kete nilam.
+  console.log(result); // [65 , 44]  // jeta kete niyechi sei value eta.
+  console.log(numbers); // [12 , 4] // main array change howar por original array te obosisto element.
+
+
+toString()
+
+
+
+fruits.indexOf("karim") // 2
+                         / 2number index e ache karim. mane fruits er modde karimer index 2
+lastIndexOf()  // eta indexOf() er motoi pray.
+
+isArray() // true false return korbe.
+
+
+
+
+slice(3)  // first 3ta kete pelbe
+slice(-3) // last er 3ta kete pelbe

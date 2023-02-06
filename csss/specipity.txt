@@ -1,0 +1,48 @@
+1 : inline css // etar specifity ba gurotto sob cheye beshi.
+2 : #Id selector // er pore id
+3 : .class,  :pseudo-class, [attribute] // er pore ei gula . tobe era 3tai same level e thake.
+4 : tag and :: pseudo-element selectors  // etar specifity aro kom.
+5 : *  // sob cheye kom hocce universel selector er.
+
+
+// ekadhik class selector thakle jeta pore use hoice seta ager take overrite kore apply hoye jabe.
+      / karon 2tar specifity same tai porer ta win hobe.
+
+
+
+
+// iict means inline id class tag.
+      final score : 0, 0, 0, 0
+
+
+// example
+<p class='pera'> najmul </p>
+
+/* 0, 0, 1, 0*/
+.pera{ color: black; } // eta jite jabe karon tag er cheye class er specifity beshi. e khetre order maintain korbe na.
+
+/* 0, 0, 0, 1*/
+.pera{ color: red; } 
+
+
+/* 0, 0, 0, 2*/
+div > p  // karon 2ta tag.
+
+
+/* 0, 0, 1, 2*/
+div > p.pera  // ekhob etar specifity beshi.
+
+
+!important // dile inline er cheyeo specifity beshi hoye jabe. mane oigular gurottoi dibe na.
+
+
+
+ 
+===// css likhar somoy sob cheye kom specifity jegulor segula age likhe pelbo.
+       / jate kore ekta arektar sathe conflig na kore .
+    example : 
+*{}
+body{}
+h1, h2{};
+.class{}
+.id{}

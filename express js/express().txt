@@ -1,0 +1,45 @@
+ekta frame work er sob kichui thake api refference e
+
+/// egula post method er jonno projojjo.
+
+
+app.use(express.json()) // mane express.json function jeta return korbe setake use koro.
+--express.json() // user jokhon kono post method e body te kono json data pathabe tokhon amra json data gula req.body er modde pabo. req.body.name
+                     headers:--    ContentType application/json hote hobe.
+
+
+      user amader ke je sob somoy json data dibe ta na string ba raw data o dite pare.
+
+
+
+app.use(express.raw())
+-- express.raw()  // eta beffer akare data dey. buffer ke string e conver korte pari.
+                       req.body.toString() kore nile string pabo. obosooi headers er dike kheyal rakte hobe.
+
+
+
+--express.text() // plain text pathale  app.use(express.text()) hobe.  and req.body er vitore data pabo.
+                              // emon text hobe my name is najmul hasan.   etai plain text
+
+
+
+--express.urlencoded() // raw ,json ba string e na diye jodi amra form data formate e dei tahole urlencodded formate e pabo .
+                             req.body er modde pabo.
+
+
+
+
+
+// eta get method e hobe
+
+--express.static()  // jodi amader project folder ba file e kono image thake and amra cai something.com url e hit korei image ta access korbo.
+                       __dirname eta amader ke root directory dibe.
+                        app.use(express.static(__dirname +'/public/'))  // evabe easily image ba text access korte pabo.
+                      // app.use(express.static(`${__dirname}/public/text/`))  url e public r text dite hobe na just localhost:3000/test.txt
+                             dilei result peye jabo.
+                          
+
+
+--const router = express.Router()   // express.Router() diye router object make kori. caile amader icca moto router object make korte pari.
+                                       express.Router([options]) er peramiter e kichu options o thakte pare
+                                          by default router gula case sensitiive thake.

@@ -1,0 +1,206 @@
+
+  // num: 1
+    function display(){
+      var a = b = 10
+
+    }
+
+    display()
+    console.log('b', typeof b === 'undefined', b); // b false 10
+    console.log('a', typeof a === 'undefined'); // 30 a true
+ 
+   
+ 
+
+   // num: 2
+let A, B, C, D;
+    A= 5;
+    B=6;
+    C=7;
+    D=8;
+let result = A * B - C * D
+console.log("DIFERENCA = " + result); //  38 DIFERENCA = -26
+
+
+
+   // num: 3
+var playerOne = 'shakib al hasan';
+var playerTwo = 'tamim';
+
+if(playerOne > playerTwo){
+  console.log(`hello i am ${playerOne}`)
+}else{
+  console.log(`hello i am ${playerTwo}`) // age condition jeheto mittha tai else e ese tamim outPut hobe.
+}
+
+
+
+
+   // num: 4
+function hello (){
+      console.log('hi')
+    }
+
+    function Test(a = hello){      // hello function ke a name e niyechi.
+      function hello(){
+        console.log('hello world!')
+      }
+      a() // hi
+      hello() // hello world!
+    }
+
+    Test()
+
+
+
+
+   // num: 5
+const arr = [1, 2];
+arr.hello = 'hello world!';
+for(a of arr){
+  const b = arr[a];
+  console.log(b) // 2 , undefined
+}
+console.log(typeof arr.hello) // string
+
+
+
+
+   // num: 6
+function One(y1, y2, ...y3){
+  const [x1, ...[result]] = y3;
+  console.log(y1, y2, x1, result) // 'najmul', 'karim', 'jaber', 'jafor'
+}
+const arr = ['najmul', 'karim', 'jaber', 'jafor', 'halim', 'rasel', 'riyad']
+One(...arr)
+
+
+
+
+
+
+   // num: 7
+const personOne = {
+  name: 'najmul'
+}
+const personTwo = {
+  name: 'najmul'
+}
+const a= 'najmul'
+const b = 'najmul'
+console.log(personOne == personTwo) // false hove because refference type.
+console.log( a === b) // true hobe jeheto primitive.
+
+
+
+
+
+   // num: 8
+onst arrayOne = [2, 3, 4, 5]
+const objectOne = {
+  name: 'najmul hasan',
+  age: 55
+}
+
+console.log({...arrayOne}) // {0: 2, 1: 3, 2: 4, 3: 5}
+console.log([...objectOne]) // object is not iterable
+
+
+
+   // num: 9
+let exOne = new Array(15)
+   console.log(exOne);  // [empty × 15]   15ta empty.
+
+   let exTwo = [];
+   exTwo[2] = 500;
+   console.log(exTwo);  // [empty × 2, 500] tar mane 0 r 1 index empty.
+
+   let exThree = ['',,,];
+   console.log(exThree);  // ['', empty × 2]
+
+
+
+
+   // num: 10
+var hello = () =>{
+  console.log('bye world')
+}
+
+var hello = `what's up world`;
+
+function hello (){
+  console.log('hello world')
+}
+
+hello()
+hello()
+
+
+
+
+
+   // num: 11
+let a
+function hello (){
+  return 'hello world'
+}
+
+if(function hello () {return 'by world'}){
+  a = hello()
+}
+
+console.log(a)  // hello world
+
+
+
+
+
+
+  // num: 12
+  const date = "2022-05-05";
+
+  const [year, month, day] = date.split("-");
+  const currentMonth = month.substring(1);   // eta bamer 0 bad dibe.
+  const currentDay = day.substring(1);
+
+  const result = [currentMonth, currentDay, year].join("/");
+  console.log(result); // 5/5/2022
+
+
+
+
+   // num: 13
+  const date = "2022-12-05";
+
+  const [year, month, day] = date.split("-");
+  const currentMonth = month.replace("0", " ");
+  console.log(currentMonth);
+  const currentDay = day.replace("0", " ");
+
+  const result = [currentMonth, currentDay, year].join("/");
+
+  console.log(result);   // another same example
+
+
+
+
+
+
+
+
+
+ function spreadNumber(num) {
+    let arr = [[], [], []];
+    for (let x = 0; x <= 2; x++) {
+      const maxPrint = num / 2;
+      const rand = Math.round(Math.random() * (maxPrint - 1)) + 1;
+      let secValue = Math.round((num - rand) / 2);
+      arr[0].push(rand);
+      arr[1].push(secValue);
+      arr[2].push(num - (arr[0][x] + arr[1][x]));
+    }
+
+    return arr;
+  }
+
+  console.log(spreadNumber(30));

@@ -1,0 +1,40 @@
+// rgba means red green blue alpa
+      color: rgb(255, 217, 0)  // 3tai color.
+       color: rgba(255, 217, 0, 0.377) // seser ta alpa jeta transparenci control kore.
+                                            color eke bare halka kore dey.
+
+
+
+background-image: url();
+
+background-image: url() , url() , url(); // multiple image o newa jabe. se khetre position size segulao , diye diye likbo.
+
+background: linear-gradient(), url();
+
+background-position: 50% / 10px / 10px 20px / center center / top / left / right.
+                       2bar  center center // mane x okkho borabor and y okkho borabor center hobe.
+                   bootom center /  first value x okkho and second value y okkho.
+
+background-size: contain / cover / 30% / 100%;
+
+background-repeat:
+
+background-attachment: fixed;  //image fixed korte. by default scroll thake.
+
+background-origin: border-box ; // border e jate image dekha jay.   / by default padding-box thake.
+
+background-clip: padding-box; / content-box;  / eta content jototuko nibe tototuko jayga nibe.
+                              // border thakle padding ba backgound er pore chole jabe.
+                                   / by default border-box thake
+background-color:
+
+
+
+
+
+background-size:
+// contain bolte exac jei size seita show korbe.
+// cover dile available width height ta cover kore nibe.
+// contain , cover na diye % diyeo size dite pari se khetre jei element er
+     vitore size dicci setar width height onusary nibe.
+                 example: background-size: 50%;

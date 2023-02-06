@@ -1,0 +1,32 @@
+question: when will u meet me? 
+ans     : how about tomorrow?
+
+
+
+install vite
+______________
+npm create  vite@latest
+
+
+
+
+
+npm i -g vercel
+
+vercel login
+
+vercel env add MONGO_URL   // env file 
+
+vercel
+// vercel --prod to overwrite later
+
+Deployed to production. Run `vercel --prod` to overwrite later (https://vercel.link/2F).
+
+
+What’s the name of your existing project? pizza-ordering-app
+�🔗  Linked to najmul-hasan-khokon/pizza-ordering-app (created .vercel and added it to .gitignore)    
+�🔍  Inspect: https://vercel.com/najmul-hasan-khokon/pizza-ordering-app/Fd7aVBFWUCmvepc1ER1SGNnDFo7e [
+s]
+✅  Production: https://pizza-ordering-app-ruddy.vercel.app [1m]
+�📝  Deployed to production. Run `vercel --prod` to overwrite later (https://vercel.link/2F).
+�💡  To change the domain or build command, go to https://vercel.com/najmul-hasan-khokon/pizza-orderinapp/settings

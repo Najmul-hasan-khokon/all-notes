@@ -1,0 +1,25 @@
+cdn diye o kaj korte pari. se khetre kichu limitation ache.
+
+npm init -y dile question gula avoid hobe
+npm init dile question er answer dite hobe.
+
+
+1. package.json  // file create korbo.
+2. npm diye tailwind install korbo.
+3. tailwind congiration install korbo.
+4. src folder and public folder create korbo.
+    
+5.   src e 1ta file index.html
+     public e 2ta file index.html and style.css
+
+6. "build:tailwind": "tailwind build src/style.css -o public/style.css"
+       // tailwind take build korar jonno ei commad use korbo.
+
+   "build": " npx tailwindcss -i ./src/tailwind.css  -o ./public/style.css -w",
+    "build-p": "postcss ./src/tailwind.css  -o ./public/style.css -w"
+
+7. npm run build:tailwind          // finally etake run korbo.
+   
+
+tailwind intellisence install korbo. auto suggestion er jonno.  
+ // tailwind.congig.js file na thakle kaj korbe na.

@@ -1,0 +1,173 @@
+১।  sub বাক্যের শুরুতে বসে।
+২। একটা বাক্যে sub word হবে একটা, আর sub word টি অবশ্যই noun অথবা pronoun হবে।
+৩। Noun equivalent, Sub হতে পারে।  // to+v1 (to walk), v+ing (talking), the+adj (the poor).
+                                                                              // যেহেতো এরা noun বা pronoun তাই এরা sub হওয়ার যোগ্যতা রাখে।
+৪। preposition এর পরে sub bosena.   // Door opening by a boy is black.
+                                 // preposition এর পরে যেটা বসবে সেটা ঐ preposition এর obj হয়ে যাবে।
+                                                                                       // আর obj কখনো sub হয়না।
+৫।  Apostrophy s যুক্ত word sub হয়না , sub ঠিক তার পরেই থাকবে ।   //  My father's friends are good.
+৬। Relative pronoun এর পরে sub বসেনা।   //  The boy who came with his friend is my brother.
+                                   // The boy is my brother.
+৭। একটা simple sentence এ দুইটা  main verb থাকেনা।  // The professor voted teacher of the year by students was traveling in Europe.
+                         // simple sentence এ auxilary verb এর পরে  main verb থাকার সম্বাবনা বেসি।
+৮। কোনো sentence এ যদি দুইটা main verb থাকে তাহলে  তার একটা অবশ্যই  v3 অথবা ing পাব। আর সেটা সব সময় noun এর সাথে বসবে। এটা sentence এর মাঝে, শুরুতে , শেষে থাকতে পারে।
+                               // The professor voted teacher of the year by students was traveling in Europe.
+৯। verb এর দুইটা adjective রুপ আছে ।    // present participle (verb + ing) , past participle (v3)
+                                 // I like the theory of obsevation of infaints developing attachments to adult.
+                                                                                       // যখন এরা sentence এ একা বসবে তখন বুঝব এটা adjective.   / infaints developing
+                                                                                        // এমন হলে সেটাকে মনে মনে complex করতে পারি।
+
+১০। simple sentence ke complex করতে noun এর পরে just একটা relative pronoun বসালেই হবে।
+                 // noun এর পরে যখন ing or verb থাকবে তখন এমন করতে পারব।
+                 // I like the theory of observation of infaints developing attachments to adult.
+                // noun and adjective এর মঝখানে , বেক্তি হলে who আর বস্তু হলে which or that বসাব।   // participle এর ক্ষেত্রে প্রযয্য।
+                 like this: // I like the theory of ovservation of infaints who r developing attachments to adult.
+
+১১। relative pronoun and axilary verb কেটে দিলে complex sentence simple sentence হয়ে যায়।
+                    // I like the theory of ovservation of infaints who r developing attachments to adult.
+                   like this: // I like the theory of ovservation of infaints developing attachments to adult.
+১২। যখনই দেখব sub এর পরে , and main verb এর আগে ,  । তখন main verb এর আগের সব কিছু sub সম্পর্কে তথ্য দিবে।
+        // Marine biology, the study of oceanic plants and animals and their ecological relationships, has furthered 
+           the efficient development of fisheries.
+
+
+
+some simple and complex sentence
+_________________________________
+  simple: Do the following statements agree with the information given in Rading Passage !?
+                    // just noun and adj er maje relative pronoun bosaici.
+  complex: Do the following statements agree with the information which is given in Reading Passage ?
+
+ simple:  A Dutch surgeon formally disciplined for her medical negligence has won a legal action to remove Google search result.
+ complex: A dutch surgeon who was formally disciplined for her medical negligence has  won a legal action to remove Google search result .
+
+
+
+1: sentence
+____________
+
+During the sixth and seventh centuries, the inhabitants of the modern-day 
+states of Gujarat and Rajasthan in Noth-western India developed a method of gaining 
+access to clean, fresh groundwater during the dry season for dringking,
+bathing, watering animals and irrigation.
+
+Summery of the sentence first
+_________________________________
+1: sub+main verb+obj
+2: subject = the inhabitants
+3: main verb = developed
+4: obj = a method  // main verb er thik porei obj thake. obj khujte hoyna.
+// summery = the inhabitants developed a method.
+
+
+some rules
+___________
+1: sub and main verb er majkhane ja ache seta sub somporke tottho dey
+        // ekhane developed er age ja ache sob kichu inhabitants somporke tottho dicche.
+2: ekoi vabe obj er pore ja thake sob obj somporke tottho dey.
+       // a method er pore ja kichu ache sob method somporke tottho dicche.
+
+3: sokol preposition tar ager word somporke tottho dey.
+4: preposition er pore kokhonoi sub bosena. er object bose sob somoy.
+5: obj kokhono sub hote parena
+6: verb+ing , v3 era kokhono eka verb hoyna. r eta jodi eka bose noun er sathe bosbe // gaining access. ekhane access hocce noun.
+7: preposition er pore noun bose.
+8: noun er age ja thake soboi adjective. // clean, fresh groundwater.  ekhane groundwater hocce noun
+                                            / kmn dara noun ke question korle adjective pawa jay.
+                                     / states hocce hocce noun. kmn states modern-day states. modern-day hocce adjective
+                                     / india hocce noun. kmn india. north-western india. north western-hocce adjective
+9: article er pore noun bose
+10: , diye diye onek tottho dite pare. //for dringking, bathing, watering animals and irrigation.
+11: adv je kono jaygay boste pare.
+
+
+
+
+ During the sixth and seventh centuries // ekhane sub thakbena. eta puratai hocce preposition ba during er pharse.
+                                           / eta kono sentence na. preposition er pore sub bosena.
+
+the inhabitants // amader sentence start hoice ekhan theke , tai etai sub, karon sub sentence er surute bose.
+
+modern-day states , Gujarat and Rajasthan etc.. // egula kno sub hoyni? karon preposition er pore sub bosena.
+
+main verb er age sob kichu ulta dik theke translate kore then main verb ses kore abj
+
+a method of gaining access // etake complex korte pari. just gaining er age that bosailei hobe
+                              / that is gainging access
+
+
+
+
+2: sentece
+______________
+When planning workplace policies, it is necessary that a 
+manager consider the politics of the civilization, such as 
+how decision are made and who makes them. 
+
+
+such as means for example
+
+
+
+
+
+
+
+3: sentence with only preposition
+_______________
+CC-TV footage from the Mind Aid Psychiatry and De-Addiction Hospital in the capital's Adabor, where
+Senior Assistant Superintendent of Police Anisul Karim met an untimely dath on Monday, paints quite
+a clear picture of what the Tejgaon Division deputy commissioner has callled an "obvious murder" it
+shows Anisul being  wrestled ot the ground by five to six people. who tie his hands behind his back and
+push him into a small room.
+
+sub: CC-TV footage
+verb: met, paints, has called, wrestled, tie  // unmikto verb khujte hobe amder.
+                                              / ekhane main verb hobe paints. , diye ekta verb start hioice
+                                              / etar sub sorasori dekha jaccena tai eta unmukto verb.
+
+obj: a clear picture // jeheto verb er porei obj thake. 
+main sentence: CC-TV footage paints a picture.
+
+// onno dike met kintu Anisul Karim er sathe chole geche. has called Deputy Commissioner er sathe chole geche
+    /mane muta muti onno verb gula sathe ba age sub ache tai oigula unmukto hobena.
+
+capital's Adabor, where   // relative pronoun sob somoy tar ager word ba noun somporke tottho dey.
+
+
+capital's Adabor,  where Senior Assistant Superintendent of Police Anisul Karim met an untimely dath on Monday
+    // ei je anisul okal mrittur mukha mukhi holo seta kothay hoyeche. where bole dicce capital's adabore e gotce.
+
+_it shows // newspaper gula normally _ diye new sentence start kore.
+it shows // it bolte ekhane CC-TV footage ke bujacce.
+
+
+
+4: sentence
+___________________
+Marine biology, the study of oceanic plants and animals and their ecological relationships, has furthered 
+the efficient development of fisheries.
+
+ summery // Marine biology has furthered.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

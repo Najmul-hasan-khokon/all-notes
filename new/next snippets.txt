@@ -1,0 +1,44 @@
+
+    mern snippets
+
+Page initialization snippets    
+_________________________________
+nafe (nextjs arrow function (export at the end))
+nafe (nextjs normal function (export at the end))
+nf (nextjs normal function )
+
+
+
+Nextjs snippets
+________________
+ngsspr (nextjs getServerSideProps)
+ngspr (nextjs getStaticProps)
+ngspa (nextjs getStaticPaths)
+
+
+Importing Components
+nil (nextjs import link)
+nir (nextjs import router(default))
+niur (nextjs import useRouter)
+nih (nextjs import Head)
+nii (nextjs import Image)
+nid (nextjs import dynamic)
+
+
+
+
+hook snippets   u (s,e) h = use hook
+____________________
+Prefix	Snippet
+ush	useState
+ueh	useEffect
+uch	useContext
+ucbh	useCallback
+umh	useMemo
+irh	import React (and common hooks)
+urh	useRef
+urdh	useReducer
+irrh	import react redux hooks
+uss	useSelector
+usdf	useDispatch
+usd	then use your dispatch

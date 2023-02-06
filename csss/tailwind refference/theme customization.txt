@@ -1,0 +1,23 @@
+theme er modde 
+colors screens fontFamily extend etc.. egula tailwind er core plugin
+amra caile segula ke change kore dite pari. mane amader custom property and value diye
+overwrite kore dite pari.
+
+// single object ba nested object ba json formate o likhte pari.
+
+
+
+// abar tader property thik rekhe amader value diye tader value replace o korte pari.
+
+colors: {   // evabe
+   grey: {
+     50: '#fdfkd',
+     100: '#4kkds',
+  }
+};
+
+
+
+warning:// extend property er bahire kichu change korle tailwind er default core jinish overwrite hoye jabe.
+   note:// jokhon sob kichu locked kore common kichu property niye kaj korbo thik tokhonoi
+            extend er bahire common jinish configure korbo.

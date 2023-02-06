@@ -1,0 +1,7 @@
+
+ 
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],  
+// src folder e dukbe
+    ** er mane hocce src folder e je jokono name er folder ba file thakte pare
+    *. er mane jekono namer er file. hote pare.  like: something.html/js/jsx etc..
+  // multiple type er file thakle {} er vitore koma diye file er extension bole dibo

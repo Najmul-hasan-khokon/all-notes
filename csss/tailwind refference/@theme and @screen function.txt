@@ -1,0 +1,76 @@
+tailwind er configaration file er value gula amra // theme() diye access korte pari.
+// tailwind er sokol style gula theme namok ekta object e thake.
+
+
+note:// theme object er vitorer property gula theme() function er vitore access korte parbo.
+       // theme er vitorer property gulake plugin bole.
+         //  margin-left: theme("spacing[12]");  // hyphen er bodole . ba array er moto kore eke access korte hobe.
+         //  margin-left: theme("spacing.12");   // spacing-12 not allowed
+
+
+
+11 video abar dekhbo.
+
+// theme er vitore kichu define korle segula theme object theke object er moto kore access korte parbo.
+
+// example-1
+__________________
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  darkMode: "class", // media
+  theme: {
+    colors: {
+      blue: "#1fb6ff",
+      purple: "#7e5bef",
+      pink: "#ff49db",
+      white: "#ffff",
+      padding: "40px",
+      "margin-left": "50px",   // property string er vitoreo rakte pari.
+    },
+
+    extend: {},
+  },
+  plugins: [],
+};
+
+
+
+@layer components {
+  .btn {
+    background-color: theme(colors.pink);  // colors object theke pink , value dite hobe na just property dilei hobe.
+    color: theme(colors.white);
+    padding: theme(colors.padding);
+  }
+}
+
+
+
+
+
+
+
+// @screen er poriborte screen(somethin) function use korbo.
+
+
+screen
+________
+
+ screens: {
+      sm: "500px",
+      md: "700px",
+    },
+
+
+
+@layer components {
+  @media screen(md) {    // medium device e asle btn kaj korbe.
+    .btn {
+      background-color: theme(colors.red);
+      color: theme(colors.white);
+      padding: theme(colors.padding);
+      margin-left: theme("spacing[12]");
+    }
+  }
+}

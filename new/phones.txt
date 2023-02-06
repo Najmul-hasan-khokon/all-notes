@@ -1,0 +1,42 @@
+symphony z47 = 11499
+
+
+mind map method notes.  // trees akare newa jabe.
+flow method note taking
+write on the slides method
+
+
+step-1
+__________
+1: search task seduler
+2: disable antimalware disable korte hobe task manager theke
+3: task sheduler library > microshoft > windows > windows defender > click on the windows defender shedule scan 
+   then uncheck run with highest privileges 
+then click on the conditions tab  then power er niche kichu check thakle uncheck korbo. then close the tab.
+
+
+
+step-2
+________
+
+Here are a few effective ways to stop high RAM usage in Windows 10:
+
+Close unused background programs.
+Disable startup programs.
+Uninstall programs you no longer use.
+Check your computer for malware.
+Increase virtual memory paging file size.
+Change NDU value in the registry.
+Disable the SysMain/Superfetch task in the service menu.
+Disable animations in the Windows 10 interface.
+Reduce the number of tabs open in your browser.
+Upgrade your RAM.
+Reinstall Windows 10.
+
+
+ 
+
+
+
+
+

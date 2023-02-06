@@ -1,0 +1,178 @@
+// same element e page load howar por ki hobe, mouse hover korar por ki hobe, mouseOut , pageOut etc... ek sathe apply kora jay.
+
+
+animate={} dynamik bracket er vitore object dite hobe.
+animate={{object}}
+animate={{background: '#hexColor', color: '#4545', fontSize: '50px'}} // er vitore css property dite parbo. and framer er
+                                                                      // convenient property o dite parbo. like: x,y etc..
+
+x,y property dile content dane, bame nite parbo. translate er moto kaj korbe
+x:100 // positive value dane jabe. -100 bame jabe.
+y:100 // niche jabe. -100 upore jabe
+
+
+    initial={{ y: -300 }} // kotha theke animation start hobe setao bole dite pari.
+    animate={{ y: -100 }} // -300 theke start hoye -100 te ase stop hobe.
+    transition={{duration:1 , type: 'spring'}} // type er aro kichu value ache
+    exit={{}}
+
+
+ yoyo: infinity   // ektana animation hobe.
+
+
+property
+__________
+   // transition dewar somoy type define kore dibo. kon type er transition caitaci.
+type: 'spring'   and sathe stiffness dile translate hoye dop khabe mane bounch hobe.
+stiffness: 120   // value choto hole aste hobe. 120 ektu goti hobe. type spring hote hobe.
+
+
+
+
+initial, animate  // egula page load howar sathe sathei hoye jabe.
+
+
+
+
+
+
+// hover part-6
+____________
+whileHover={{scale:1.5, origin: 0}}  // origin eta overflow er moto kaj kore. part-6
+
+
+
+
+variants part-7
+______________
+ / age variant create kore then use korbo. variant er vitore onek gula object hote pare jut bole dibo kokhon kon object use hobe.
+ // nested object o hote pare. 
+ // class name onujai variant name gula dibo. jodi next namok class thake tahole nextVariant={} dibo
+ // parent er variant child o paite pare. se khetre inital,animate dewar dorkar nai. just variants use korbo.
+
+// create a variant
+  const containerVariants = {  // eta ekta object and er vitorer property gula jekono name e hote pare.
+    hidden: {  //
+      opacity: 0,
+      x: "100vw",
+    },
+    vissible: {  // vissible ba hidden hote hobe emon kono kotha nai.
+      opacity: 1,
+      x: 0,
+      transition: { type: "spring", stiffness: 60 },  // alada kore r transition dite hobena. eta ekhan theke automatic niye nibe.
+    },
+  };
+
+// use a variant
+     <motion.h1
+        className="text-center"
+        variants={containerVariants}  // variant object ke variants property te use korte hobe.
+        initial="hidden"  // variant er property gula string akare dite hobe.
+        animate="vissible"
+        transition={{ type: "spring", stiffness: 60 }}
+      >
+        hello world!
+   </motion.h1>
+
+
+
+
+keyprames part-9
+____________________
+scale=[1,1,1,1,1,1]  // evabe array akre dibo
+x=[0, -20, 20, -20, 20, 0] // dan bam korbe 2bar tar por 0 te ase stop hobe.
+
+yoyo:10  // 10 bar animation hobe
+yoyo: infinity  // animation hobe ektana
+
+
+
+animatePresence part-11
+__________________________
+// dom theke kono element remove korar por animate korte. animatePresence  diye app ke wrap kore debo then
+    useLocation ke routes e props akare pathai debo and location er key ba pathName o dibo
+<routes location={location} key={location.key} >    </routes>
+
+  setTimeout(() => {
+    setShow(false);
+  }, 3000);
+
+
+      <AnimatePresence> dom theke element out howar somoy animation dite caile. exit er somoy h1 upore smoth vabe giye ses hobe.
+        {show && (
+          <motion.h1
+            className="text-center"
+            exit={{ y: -200 }}  //3s pore exit howar somoy upor dike animate hoye tarpor show false hole hide hoye jabe.
+          >
+            hello world!
+          </motion.h1>
+        )}
+      </AnimatePresence>
+
+
+
+animatePresence part-12
+__________________________
+route changing er somoy korte alada alada animatePresence na likhe ekbare app component ke wrap kore dibo
+
+
+// in app component
+const location = useLocation();
+
+<AnimatePresence exitBeforeEnter>  // AnimatePresence to janena kothay kon route e ki hocce. tai location diye bujaite hobe.
+<App location={location} key={location.key} />
+</AnimatePresence>
+
+exitBeforeEnter // eta dile next page load howar agei exit hoye jabe
+
+
+// jekhane animation dibo sei component e
+  const containerVariants = {  // eta ekta object and er vitorer property gula jekono name e hote pare.
+    hidden: {  //
+      opacity: 0,
+      x: "100vw",
+    },
+    vissible: { 
+      opacity: 1,
+      x: 0,
+      transition: { type: "spring", stiffness: 60 }, 
+    },
+    exit:{
+       x: '-100vw',
+       transition:{ ease: 'easeInOut'},
+    },
+  };
+
+
+
+  <motion.h1
+        className="text-center"
+        variants={containerVariants}
+        initial="hidden"
+        animate="vissible"
+        exit='exit'  // route ba page theke bahir howar somoy exit call hobe
+      >
+        hello world!
+   </motion.h1>
+
+
+
+part 14
+_________
+onExitComplete // namok arekta property ache jeta route theke exit korle call hoy
+onClick diye state update na kore onExitComplete  use korle animation thik vabe kaj korbe.
+<AnimatePresence exitBeforeEnter onExitComplete={()=> setShow(false)}> 
+
+</AnimatePresence>
+
+
+
+svg animation part-15   // svg niye kaj korle abar dekhbo
+______________________
+svg er ek ekta path ek ekta image er choto choto ongsoke represent kore
+
+
+
+
+part-16 // loader baniye dekhay
+___________

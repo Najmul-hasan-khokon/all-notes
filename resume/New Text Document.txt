@@ -1,0 +1,12 @@
+  
+button e click korle resume download hobe
+
+<a
+        href="./resume.pdf"   // pdf file
+        target="_blank"
+        rel="noreferrer"     // dite hobe
+        download={true}      // download true
+        className="bg-red-500 text-white"
+      >
+        get this
+      </a>

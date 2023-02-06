@@ -1,0 +1,66 @@
+--app.all('/' , (req, res)=>{})  // eta sob method e accessable . like get , post, put, delete
+ 
+
+--app.disable() or .app.enable() // jekono app er settings enable ba disable korte ei mehtod use hoy. app settings theke amra dekhe nite pari.
+                      / for example :  app.enable('case sensitive routing')  routing gula case sensitive hoye jabe.
+
+
+
+-- app.disabled() // jodi kono kichu app.disable thake tahole eta true return korbe r jodi enable thake tahole eta false return korbe.
+
+
+
+-- app.get() // app.set() diye kono kichu set korle app.get() diye seta access korte parbo.
+                 / for example : app.set('title', 'hello world!')
+                                 app.get('title')
+
+
+
+
+
+-- app.route()  // code duplicate er hat theke bachte  . sob method er jonno common url hole evabe korbo.
+   
+//for example :                   
+app.route('/blog/mission')
+  .all(function (req, res, next) {
+    // runs for all HTTP verbs first
+  })
+  .get((req, res)=>{
+    res.send('this is get')
+  })
+  .post((req, res)=>{
+    res.send('this is post')
+  })
+  .put((req, res)=>{
+    res.send('this is put')
+  })
+
+
+
+
+// normally amra json , raw , plain text response kori but caile amra
+   // ejs templete engine er maddome templete data o response korte pari. maje maddo server theke html o return korte hoy.
+        e chrao aro onek engine ache segulao use korte pari.
+
+    yarn add ejs kore install kore setake amader express er sathe set korte hobe.
+ / for example : app.set('view engine', 'ejs')
+
+
+
+by default viwes folder e hit hobe . amra viwes folder icca moto folder kore file banaite parbo . just file extension ejs dite hobe
+like somethin.ejs
+
+
+res.render('something') // dilei se jokjon kono kichu response korbe res.render er maddome viwes folder theke file e ja ache sob
+    dekhai dibe.
+
+
+
+
+app.get('/about', (req, res)=>{
+ res.render('pages/something')
+
+})
+
+
+/ evabe templete engine diye khub easily data response korte parbo.

@@ -1,0 +1,46 @@
+// somethin.styles.css        ei name e file likbo jate ami pore bujte pari eta styled component.
+                              orthad name er pore just styles dibo. na dileo prblm nai.
+
+
+// styled component import korle . se ekta styled object dibe jetar vitore html sokol tage ache.
+
+//  export const Div = styled.div` er vitore css likbo`
+
+
+// sass er moto &:something diye diye nested css likhte parbo.
+
+
+// props example
+<container color='#ffff'>  // props pataite pari.
+  i am container
+</container>
+
+
+export const container = styled.div`
+   background: `${(props)=> props.color}`    // eivabe props recive kore use korte pari.
+   margin-top: 30px;
+ `;
+
+
+
+// caile styled(ourCustomComponent)  er vitore custom component dite pari. karon styled object eto html tage
+                                    chara onno kichu nai. eta higher order ba render props er moto kaj korbe.
+
+
+
+import {createGlobalStyle} = from 'styled-component';
+
+createGlobalStyle // eta diye global style kore.
+// global style onno vabe dite hobe . 44.36 minutes e learn with sumit e dekhano hoice react er video te.
+
+
+
+import {ThemeProvider} = from 'styled-component';
+  // ThemeProvider eta diye dark light mode pura app e chorai dite parbo.
+         <ThemeProvider theme='dark'>  <App/>   </ThemeProvider>
+/ ekhon props akare app er jekono jaygay recive kore apply korte parbo.
+
+
+
+ekta component default export korte parbo.
+single component o export korte parbo.

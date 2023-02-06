@@ -1,0 +1,40 @@
+-- conditional chaining  ?. 
+
+
+obj.val?.prop
+obj.val?.[expr]
+obj.arr?.[index]
+obj.func?.(args)
+
+
+ const myCookie = context.req?.cookies || "";
+
+example: 1
+____________
+        // কন্ডিশনাল চেইনিং। context.req যদি undefined হয়, তাহলেও ?. ব্যবহারের কারনে এরর দিবে না। context.req 
+                      এর মান undefined হলেcontext.req.cookie এরর থ্রো করবে
+
+
+
+example: 2
+____________
+  // const object={name:"opu"} 
+    object?.opu এইভাবে এইখানে conditional chaining ব্যবহার করে object এ access নেওয়া হয়
+
+
+
+example : 3
+__________________
+const adventurer = {
+  name: 'Alice',
+  dog: {
+    name: 'Dinah'
+  }
+};
+
+const dogName = adventurer.dog?.name;
+console.log(dogName);
+// expected output: Dinah
+
+console.log(adventurer.someNonExistentMethod?.());
+// expected output: undefined

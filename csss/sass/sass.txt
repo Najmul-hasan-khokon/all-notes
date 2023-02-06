@@ -1,0 +1,63 @@
+file name:
+ // ekta global file create korbo. something.scss
+ // sub file gula _something.scss diye create korbo. name er age _ thakbe.
+
+ // $ diye variable declare korte hoy.  $primary: white;
+ // variable access korte hole @import 'something'; diye file import kore
+             color: $white;   / age $ diye tarpor variable name dite hoy.
+
+
+
+mixin
+______
+// common code ba repeated code gula _mixin.scss file create kore @mixin name{} function e rakhte pari. @mixin name($red){}
+// jokhoni dorkar hobe file import kore
+                  @include name;  / caile mixin e peramiter pathaite pari.
+                                          @include name(red) / eta function e recieve korte hobe.  
+
+
+
+// already @include kora ache emon kichu caile @extend korte pari.
+.home_container {
+  .home_items {
+    @include flex_center(red);
+  }
+  .btn_container {
+    display: block;
+    button {
+      @extend .home_items;   // .home_items er sokol value button e extend hoye jabe.
+      display: block;
+      margin-right: 0;
+      width: 100%;
+    }
+  }
+}
+
+
+
+
+// function o lekha jay
+_________________________
+@function name(){}
+
+
+
+condition dite pari.
+______________________
+if(){
+  @return #5555 
+}
+
+
+
+operator o dite pari 
+_____________________
++ - * / > < %
+
+
+// moduler way teo sass code likha jay css er moto.
+
+
+// &:hover     / sudo element gula add korte hole.
+
+                           

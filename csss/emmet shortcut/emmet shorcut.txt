@@ -1,0 +1,31 @@
+   (.row>(.col-lg-6.col-md-6.col-sm-12.col-xs-12.services.mt-4>.services__content)*2)*3
+img.img-fluid[alt='marketing illustration']
+
+
+   (.row>(.col-lg-6.col-md-6.col-sm-12.col-xs-12.services.mt-4>.services__content)*2)*3
+  img.img-fluid[alt='marketing illustration']
+
+
+
+ .row>(.col-lg-4.col-md-6>.portfolio_box.shadow>(img[src='images/protfolio/portfolio-$.jpg'][alt='portfolio $ image'][title='portfolio $ picture'].img-fluid)>.portfolio_info>.caption>h4{project name goes here $ }p{catergory project})*9
+
+
+
+div{$}*5   // { curly brakect er vitore text likhte parbo}
+div{he is number $}*5
+
+
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+
+
+
+
+
+
+
+
+
